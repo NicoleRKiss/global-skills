@@ -1,0 +1,439 @@
+[
+    {
+     "id": 1.1,
+     "name": "Curso de Community Management - Programa Integral",
+     "description": "Este curso te enseñara las herramientas más importantes dentro del mundo del marketing digital de redes sociales",
+     "imagen": "img.jpg",
+     "categoria": "Marketing Digital",
+     "price": 5000,
+     "keywords": [
+        "Community",
+        "Manager",
+        "CM",
+        "Redes Sociales"
+      ] 
+    },
+    {
+        "id": 1.2,
+        "name": "Curso de Community Management I",
+        "description": "Este curso es una introducción al manejo de las redes sociales, en el cual podrás aprender a controlar las principales redes sociales y algunas de sus herramientas.",
+        "imagen": "img.jpg",
+        "categoria": "Marketing Digital",
+        "price": 3500,
+        "keywords": [
+            "Community",
+            "Manager",
+            "CM",
+            "Redes Sociales",
+            "Introduccion a las redes sociales"
+          ] 
+       },
+       {
+        "id": 1.3,
+        "name": "Curso de Google Adwords y posicionamiento en Google",
+        "description": "Aprende a crear, configurar, implementar y optimizar una campaña en Google Ads a través de la red de búsqueda y display. Publicita productos o servicios en el buscador más importante. Haz conocer tu marca en millones de sitios web, incrementá el tráfico hacia tu sitio web y aumentá tus ventas. Desarrollá campañas de remarketing y dentro de Youtube.",
+        "imagen": "img.jpg",
+        "categoria": "Marketing Digital",
+        "price": 4000,
+        "keywords": [
+            "Google",
+            "Google Adwords",
+            "Adwords",
+            "Posicionamiento en Google"
+          ] 
+       },
+       {
+        "id": 1.4,
+        "name": "Curso de Marketing Online - Programa Integral",
+        "description": "Aprendé a desarrollar estrategias de Marketing Digital. Conocé las mejores herramientas para implementar un plan de marketing online, utilizar con eficiencia las redes sociales y convertir tus visitas en clientes.",
+        "imagen": "img.jpg",
+        "categoria": "Marketing Digital",
+        "price": 5000,
+        "keywords": [
+            "Marketing Online",
+            "Marketing",
+            "Plan de Marketing"
+          ] 
+       },
+       {
+        "id": 1.5,
+        "name": "Curso de Introducción al Marketing Online",
+        "description": "Domina los principales conceptos del Marketing Digital y el Inbound Marketing para llevar a cabo estrategias de comunicación eficientes. Aprende a desarrollar una planificación integral que optimice los distintos canales digitales.",
+        "imagen": "img.jpg",
+        "categoria": "Marketing Digital",
+        "price": 3500,
+        "keywords": [
+            "Marketing Online",
+            "Marketing",
+            "Plan de Marketing",
+            "Inbound Marketing"
+          ] 
+       },
+       {
+        "id": 1.6,
+        "name": "Programa Ejecutivo de Marketing Online",
+        "description": "Este curso busca brindar las herramientas para el inicio de una gestión estratégica y ordenada en plataformas sociales (principalmente Facebook y Twitter). Los encuentros se plantean con el objetivo de brindar herramientas prácticas para la solución de problemas cotidiano de pequeñas marcas.",
+        "imagen": "img.jpg",
+        "categoria": "Marketing Digital",
+        "price": 4000,
+        "keywords": [
+            "Marketing Online",
+            "Marketing",
+            "Plan de Marketing",
+            "Programa Ejecutivo"
+          ]
+       },
+       {
+        "id": 1.7,
+        "name": "Curso de e-Commerce",
+        "description": "En este curso aprenderas a reconocer los distintos pasos por los cuales atraviesan tus clientes para poder generar estrategias que aumenten tu caudal de ventas.",
+        "imagen": "img.jpg",
+        "categoria": "Marketing Digital",
+        "price": 5000,
+        "keywords": [
+            "eCommerce"
+          ] 
+       },
+       {
+        "id": 1.8,
+        "name": "Curso de Marketing de Contenidos",
+        "description": "En este curso aprenderas a evaluar cuales contenidos son los más relevantes para tu negocio, qué comounicar, cuando, de qué manera y a través de qué medio, para que seá más eficiente el resultado obtenido.",
+        "imagen": "img.jpg",
+        "categoria": "Marketing Digital",
+        "price": 3000,
+        "keywords": [
+            "Marketing de Contenidos",
+            "Marketing",
+            "Contenidos"
+          ] 
+       },
+       {
+        "id": 1.9,
+        "name": "Curso de MercadoLibre: Como aumentar las ventas",
+        "description": "Este curso buscá enseñar como tu presencia en MercadoLibre potenciará los resultados de tu negocio, siempre que sepas manejar algunas variables a tu favor: entre ellas cómo posicionar tus productos, cómo crear ofertas que se destaquen, y un buen servicio post-venta que te garantice la recomendación de tus compradores en la plataforma.",
+        "imagen": "img.jpg",
+        "categoria": "Marketing Digital",
+        "price": 3000,
+        "keywords": [
+            "Mercado Libre",
+            "Ventas",
+            "MercadoLibre"
+          ] 
+       },
+
+
+       {
+        "id": 2.1,
+        "name": "Curso de responsabilidad social, empresarial y sustentabilidad",
+        "description": "Conocer los diferentes conceptos que se relacionan e interrelacionan con el concepto de sustentabilidad y  formarse en los distintos tipos de organizaciones en las que pueden aplicarse las acciones en post del nuevo modelo de negocios de triple impacto.",
+        "imagen": "img.jpg",
+        "categoria": "Gestion & Management",
+        "price": 3000,
+        "keywords": [
+            "Resonsabilidad Social",
+            "Responsabilidad empresarial",
+            "Sustentabilidad",
+            "Empresarial"
+          ] 
+       },
+       {
+        "id": 2.2,
+        "name": "Curso de Control de Gestión y Tablero de comando",
+        "description": "Descubrir las mejoras sustantivas derivadas de comprender el alcance de los procesos de planificación y análisis de gestión en cualquier tipo de organización. Comprender la importancia de trasladar la visión de la organización hacia objetivos estratégicos completos. Aprender a transformar los objetivos en guías para el proceso de planificación.",
+        "imagen": "img.jpg",
+        "categoria": "Gestion & Management",
+        "price": 3000,
+        "keywords": [
+            "Control de Gestión",
+            "Planificación",
+            "Planificación",
+            "Control de Gestion"
+          ] 
+       },
+       {
+        "id": 2.3,
+        "name": "Curso de Gestión y Gerenciamiento de Entidades Deportiva",
+        "description": "Este curso apunta a la adquisición de conocimientos y estrategias que posibiliten tomar las decisiones más adecuadas en las diferentes situaciones y circunstancias que nos plantea el futuro en las instituciones educativas y deportivas de hoy.",
+        "imagen": "img.jpg",
+        "categoria": "Gestion & Management",
+        "price": 3000,
+        "keywords": [
+            "Gerenciamiento",
+            "Entidades Deportivas",
+            "Deporte",
+            "Instituciones educativas",
+            "Instituciones deportivas"
+          ]
+       },
+       {
+        "id": 2.4,
+        "name": "Curso de Teletrabajo. Optimización de tiempos y tareas en el trabajo",
+        "description": "El curso proporciona una introducción a una nueva forma de trabajar a través de la metodología de teletrabajo. Apuntado a  aquellas personas que desean iniciarse como teletrabajadores.",
+        "imagen": "img.jpg",
+        "categoria": "Gestion & Management",
+        "price": 2500,
+        "keywords": [
+            "Teletrabajo",
+            "Trabajo Online",
+            "Home Office",
+            "Homeoffice",
+            "Metodologia de trabajo"
+          ] 
+       },
+       {
+        "id": 2.5,
+        "name": "Curso de Gestión de Pequeñas, Medianas Empresas",
+        "description": "Este curso expone en forma global los temas imprescindibles que deben conocer quiénes forman parte de las Pymes como dueños, mandos medios o aspiran a cargos directivos. incorporar los conocimientos relativos a las diversas áreas que componen una unidad de negocios: la gestión de los recursos humanos, la comunicación organizacional, la definición de la identidad empresaria y la imagen corporativa, el estudio de mercado, la gestión comercial, y por último las técnicas de ventas.",
+        "imagen": "img.jpg",
+        "categoria": "Gestion & Management",
+        "price": 4000,
+        "keywords": [
+            "Empresas pequeñas",
+            "Empresas medianas",
+            "PyMes",
+            "Empresas pequeñas y medianas"
+          ] 
+       },
+       {
+        "id": 2.6,
+        "name": "Curso de Planificación Estratégica",
+        "description": "En este curso aprenderan eué es un Plan Estratégico y por qué es tan importante en la empresa, cuáles son las fases principales en su elaboración, qué factores determinan el éxito o no de una planificación estratégica, entre otras cosas.",
+        "imagen": "img.jpg",
+        "categoria": "Gestion & Management",
+        "price": 4000,
+        "keywords": [
+            "Planificacion",
+            "Planificación",
+            "Estrategica",
+            "Estrategia"
+          ] 
+       },
+       {
+        "id": 2.7,
+        "name": "Curso de Gestión Gastronómica",
+        "description": "A través de este curso adquirirarn las nociones principales y específicas que permite desarrollar desde una idea/microemprendimiento un establecimiento gastronómico. Aprenderan a desenvolverse en las áreas de alimentos y bebidas con conocimientos específicos. Conceptos para administrar y gestionar un establecimiento gastronómico y comprender la actividad en toda su magnitud.",
+        "imagen": "img.jpg",
+        "categoria": "Gestion & Management",
+        "price": 4000,
+        "keywords": [
+            "Gestion gastronomica",
+            "gastronomia",
+            "alimentos"
+          ]
+       },
+       {
+        "id": 2.8,
+        "name": "Curso de Control Financiero - Gestión Económico Financiero",
+        "description": "El objetivo de este curso es desarrollar una visión global, en términos económicos financieros. Brindar conocimientos y herramientas que permitan optimizar la gestión económico financiera de la empresa y comprender como impacta la gestión propia en los resultados.",
+        "imagen": "img.jpg",
+        "categoria": "Gestion & Management",
+        "price": 4000,
+        "keywords": [
+            "Control financiero",
+            "Gestión económica",
+            "Gestión financiera"
+          ] 
+       },
+       {
+        "id": 2.9,
+        "name": "Curso Integral para Empresas Familiares",
+        "description": "Los objetos de este curson son aprender herramientas para resolver los principales desafíos de toda empresa familiar, diseño e implementación de procesos sucesorios. Se enseñara la construcción de acuerdos familiares que ayuden a la continuidad y la profesionalización de la empresa.",
+        "imagen": "img.jpg",
+        "categoria": "Gestion & Management",
+        "price": 4000,
+        "keywords": [
+            "Empresas familiares",
+            "Familias"
+          ]
+       },
+       {
+        "id": 2.10,
+        "name": "Curso Ejecutivo de Control de Gestión, Presupuestos y Costos",
+        "description": "En este curso aprenderán de la mano de expertos como realizar presupuestos, gestionar costos. El fin del objetivo aprender herramientas para poder mantener lo aprendido actualizado.",
+        "imagen": "img.jpg",
+        "categoria": "Gestion & Management",
+        "price": 4000,
+        "keywords": [
+            "Presupuestos",
+            "Costos",
+            "Ejecutivo",
+            "Control"
+          ] 
+       },
+
+       {
+        "id": 3.1,
+        "name": "Curso de Negocios - Programa Integral",
+        "description": "En este curso aprenderas sobre la información y herramientas más importantes de los negocios en Ingles, Portugues, Italiano y Francés.",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 2000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Italiano",
+            "Frances",
+            "Negocios"
+          ] 
+       },
+       {
+        "id": 3.2,
+        "name": "Curso Económico: Vocabulario Económico, Bancario, Contable, de Finanzas y Tributos",
+        "description": "En este curso aprenderas el vocabulario economico en Inglés, Portugués, Italiano y Francés",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 2000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Italiano",
+            "Frances",
+            "Vocabulario",
+            "Bancario",
+            "Finanzas",
+            "Contable"
+          ]  
+       },
+       {
+        "id": 3.3,
+        "name": "Curso Técnico, Tecnológico y de Sistemas",
+        "description": "En este curso aprenderas el vocabulario técnico, tecnológico y de sistemas en Inglés y Portugués",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 2000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Tecnológico",
+            "Ténico"
+          ]  
+       },
+       {
+        "id": 3.4,
+        "name": "Curso de Negocios I: Entrevistas laborales, redacción de CV y cartas de presentación",
+        "description": "Este es el primer curso dedicado a los negocios, princpalmente a la presentación ante los dempas, en Inglés, Portugués, Italiano y Francés",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 2000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Italiano",
+            "Frances",
+            "Entrevista laboral",
+            "Presentación"
+          ]  
+       },
+       {
+        "id": 3.5,
+        "name": "Curso de Negocios II: Redacción de correos electrónicos y cómo mantener conersaciones télefonicas eficaces.",
+        "description": "En este curso aprenderas las claves de comunicación laboral en Inglés, Portugués, Italiano y Francés",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 2000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Italiano",
+            "Frances",
+            "Comunicación laboral",
+            "Correo electronico",
+            "email"
+          ] 
+       },
+       {
+        "id": 3.6,
+        "name": "Curso de Negocios III: Vocabulario para presentaciones cotidianas y presentaciones con información visual",
+        "description": "En este curso aprenderas el vocabulario adecuado para utilizar en las presentaciones laborales en Inglés, Portugués, Italiano y Francés",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 4000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Italiano",
+            "Presentaciones laborales",
+            "Presentacion visual"
+          ]  
+       },
+       {
+        "id": 3.7,
+        "name": "Curso de Reuniones: ",
+        "description": "Este curso está dedicado a aprender el lenguaje de reuniones y vocabulario eficaz para las negociaciones en Inglés, Portugués, Italiano y Francés",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 2000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Italiano",
+            "Frances",
+            "Reuniones"
+          ]  
+       },
+       {
+        "id": 3.8,
+        "name": "Curso Social",
+        "description": "Este curso está dedicado a aprender el uso del idioma en situaciones sociales para generar vínculos en Inglés, Portugués, Italiano y Francés",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 2000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Italiano",
+            "Frances",
+            "Social"
+          ]  
+       },
+       {
+        "id": 3.9,
+        "name": "Curso de Redacción: De informes y propuestas",
+        "description": "Este curso está dedicado a aprender la redacción de archivos formales y el vocabulario especifico que esto requiere. Se dictará en Inglés y Portugués",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 2000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Italiano",
+            "Frances",
+            "Informes",
+            "Propuestas",
+            "redacción"
+          ]  
+       },
+       {
+        "id": 3.10,
+        "name": "Curso de Negocios IV: Vocabulario de Viajes de Negocios",
+        "description": "Este curso está dedicado a aprender el vocabulario necesario para situaciones de viajes donde se habla Inglés y Portugués",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 2000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Viajes de negocios",
+            "Viaje"
+          ]  
+       }
+       ,
+       {
+        "id": 3.11,
+        "name": "Curso de Negocios V: Vocabulario para Atención al Cliente",
+        "description": "Este curso está dedicado a aprender el lenguaje de call centers y atención al cliente, donde se aprenderá a hablar con un cliente/usuario y poder ayudarlo a resolver problemas. El curso está dictado en Inglés, Portuguéz, Italiano y Francés.",
+        "imagen": "img.jpg",
+        "categoria": "Comunicación Efectiva Global",
+        "price": 2000,
+        "keywords": [
+            "Ingles",
+            "Portugues",
+            "Italiano",
+            "Frances",
+            "Atencion al cliente",
+            "Vocabuario",
+            "Call Center"
+          ]  
+       }
+
+]

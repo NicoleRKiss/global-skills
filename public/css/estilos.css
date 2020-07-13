@@ -1,0 +1,474 @@
+/*
+Fonts:
+
+Similar a Futura Bold (Titulos)
+
+font-family: 'Hind', sans-serif;
+font-weight: 700;
+
+Similar a Futura Medium (Botones y Formularios)
+
+font-family: 'Hind', sans-serif;
+font-weight: 500;
+
+
+Similar a Myriad Pro (Resto du mundo)
+
+font-family: 'PT Sans', sans-serif;
+
+*/
+
+/*
+Colores: 
+El azul oscuro (fondos) --> #2E3192
+El celeste (fondos) y en tipografías --> #3CB9E2
+El Turquesa (para botón) --> #E6E6E6
+*/
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    background-color: #2E3192;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+ul{
+    margin-top: 0px;
+}
+ul li{
+    list-style: none;
+    padding-right: 6%;
+}
+a
+.listHeader{
+    padding: 15px;
+    width: 30%;
+}
+.logof img,
+.logo img {
+    width:70%;
+    height: auto; 
+}
+.logof img{
+    padding-top: 10%;
+}
+.carrito img{
+    width: 40px;
+}
+.disclaimer{
+    background-color: #3CB9E2;
+    margin-top: 0px;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+button{
+    width: 150px;
+    height: 3vh;
+    border-radius: 10px;
+    color: grey;
+    border: none;
+    margin-top: 10px;
+}
+.menu{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.enlaces{
+      display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 20%;
+}
+footer{
+    display: flex;
+   
+}
+span{
+    display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+}
+
+.uno{
+    margin-top: 15px;
+    margin-left: 2%;
+}
+
+.card-body{
+    color: black;
+}
+.cont{
+    width: 75%;
+    text-align: left;
+}
+.cont p{
+    font-size: 1.5rem;
+}
+.cont2 h1{
+    font-weight: 400;
+}
+.cont h2,
+.cont p,
+.cont h1{
+    padding-left: 5%;
+    width: 80%;
+    padding-top: 5px;
+}
+
+.card{
+    margin-right: 15%;
+    border: 3px solid rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+}
+.card,
+.cont h1{
+    margin-top:3%;
+}
+.cont2{
+    width: 25%;
+    text-align: left;
+}
+.cont2 p{
+    border-bottom: solid 1px rgba(87, 87, 87, 0.29);
+    opacity: 0.8;
+    font-size: 1.5rem;
+    font-family:  'Hind', sans-serif;
+    font-weight: 500;
+
+}
+.giga{
+    display: flex;
+    width: 100%;
+}
+.comprar{
+    background-color: #3CB9E2;
+    color:white;
+    width: 100%;
+    height: 4vh;
+    font-size: 2vh;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+}
+#seguir{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+}
+br{
+    background-color: black;
+}
+footer ul{
+    list-style-type: none;
+    margin-top:0;
+    margin-bottom:0;
+    padding-left:0px;
+     text-align:left;
+}
+footer{
+    background-color: #CCCCCC;
+    position: absolute;
+/*    bottom: 0;*/
+    padding-bottom: 1%;
+}
+footer ul:first-child{
+    padding-left: 5%;
+}
+footer ul a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
+}
+
+footer p{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    
+}
+.fa-trash{
+   color: white;
+}
+.cards{
+    height: 20%;
+    width: 96%;
+   padding-left: 4%;
+}
+#card{
+    background-color: transparent;
+    border: none;
+}
+.cardBody{
+    display: flex;
+    color: white;
+}
+.cardBody h3{
+    width: 100%;
+    display: block;
+}
+.cursos{
+    width: 70%;
+}
+.cursos li h3{
+    font-size: 1.5rem;
+}
+.cursos li h4{
+    font-size: 1rem;
+}
+.cursos li p{
+    font-size: 1rem;
+    padding-left: 0;
+    color: red;
+}
+.container-fluid{
+    padding-left: 0;
+}
+.metpago{
+    width: 90%;
+    
+}
+.listapagos li{
+    padding: 0;
+    padding-left: 2%;
+    margin: 0;
+    width:10%;
+}
+.listapagos{
+    display: flex;
+}
+.bgCat{
+    width: 100%;
+}
+.bannerCat{
+    position: relative;
+}
+.h1Cat{
+    
+    text-transform: uppercase;
+    font-size: 5rem;
+    width: 30rem;
+}
+.h2Cat{
+    font-size: 2rem;
+    color: black;
+    text-align: left;
+    text-transform: uppercase;
+}
+.txtCat{
+    position: absolute;
+     top:35%;
+    left: 2%;
+}
+.prodCat{
+    color: black;
+    width: 100%;
+    padding-left: 0;
+}
+.catCat{
+    font-size: 2.2rem;
+}
+.categ{
+    height: auto;
+}
+.col-2{
+    padding-left: 1.8%;
+    
+}
+@media(min-width:320px) and (max-width:767px){
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .ft{
+        bottom: 0 auto;
+    }
+    .disclaimer{
+        display: none;
+    }
+    .giga{
+        display: block;
+    }
+    .uno{
+        padding-left: 140px;
+    }
+    .logo{
+        padding-left: 20%;
+    }
+    .carrito,
+    button{
+        display: none;
+    }
+    .cont2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    }
+    .listapagos li {
+        width: 25%;
+    }
+    .cont{
+        width: 100%;
+    }
+    footer ul a {
+        font-size: 0.6rem;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+    .card{
+        width: 100%;
+    }
+    h1{
+        width: 100%;
+    }
+    .cont h2, 
+    .cont p, 
+    .cont h1 {
+        width: 95%;
+        text-align: center;
+    }
+    .cont h1{
+        margin-top: 5%;
+    }
+    .cardBody{
+        flex-direction: column;
+    }
+    i{
+        margin: 0 auto;
+    }
+    .h1Cat{
+        font-size: 1rem;
+    }
+    .h2Cat{
+        font-size: 0.66rem;
+    }
+    .col-2{
+        flex: 0 0 100%;
+    max-width: 100%;
+        height: 50vh;
+    }
+     .col-8{
+        flex: 0 0 100%;
+    max-width: 100%;
+        margin-right: 0;
+         padding-right: 0;
+    }
+     .prod{
+        width: 80%;
+    }
+    .cursos{
+        width: 90%;
+    }
+     #ft{
+    bottom: 0 auto;
+}
+}
+@media(min-width:768px) and (max-width:1024px){
+    .row{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .enlaces{
+        width: 47%;
+    }
+    .logo{
+        width: 20%;
+    }
+    footer p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    footer{
+        position: absolute;
+        bottom: 0 auto;
+    }
+    .cardBody{
+        flex-direction: column;
+    }
+    .cards{
+        height: 35%;
+    }
+    .listapagos {
+    display: flex;
+    text-align: center;
+    margin-bottom: 10vh;
+    }
+    .listapagos li {
+        width: 70%;
+    }
+    .h1Cat{
+        font-size: 2rem;
+    }
+    .h2Cat{
+        font-size: 1rem;
+    }
+    .col-2{
+        flex: 0 0 100%;
+    max-width: 100%;
+        height: 50vh;
+        padding-right: 0;
+    }
+    .cont2{
+        height: 20vh;
+        padding-right: 0;
+        padding-left: 1.8125em;
+    }
+
+    .categ{
+        height: 100%;
+    }
+
+    .cardBody{
+        padding-left: 0;
+    text-align: center;
+        font-size: 1.5rem;
+         align-items: center;
+    }
+    .prod{
+        width: 80%;
+    }
+    .col-8{
+        flex: 0 0 100%;
+    max-width: 100%
+    }
+ #ft{
+    bottom: 0;
+}
+}
+@media(min-width:1025px){
+    footer{
+        position: absolute;
+        bottom: 0 auto; 
+    }
+
+    #ft{
+    bottom: 0;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+}
