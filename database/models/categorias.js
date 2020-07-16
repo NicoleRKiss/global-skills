@@ -16,12 +16,8 @@ module.exports = (sequelize, dataTypes) => {
         },
   
         subcategoria : {
-            type: dataTypes.STRING,
-        },
-  
-        cursos : {
-            type: dataTypes.STRING,
-        }      
+            type: dataTypes.TEXT,
+        }    
     }
   
     const categoria = sequelize.define(alias, cols);
