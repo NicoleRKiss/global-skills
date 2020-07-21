@@ -1,3 +1,5 @@
+/*register */
+
 .body1{
     background-image: url("../images/fondo-registro-1.png");
     background-size:cover;
@@ -18,6 +20,7 @@ h1 {
     font-size: 25px;
     color: rgb(134, 134, 134);
     border-bottom: 1px solid rgba(211, 210, 210, 0.87);
+    margin: 20px;
 }
 .register {
     background-color: rgb(233, 235, 234);
@@ -40,11 +43,28 @@ h1 {
     text-align: center;
     margin: auto;
 }
+.Recordarme{
+    color:  rgb(134, 134, 134);
+    font-family: sans-serif;
+    font-size: 18px;
+    width: 340px;
+    height:20px;
+    text-align: start;
+    margin: auto;
+}
 .usando{
     color:  rgba(136, 132, 132, 0.877);
     font-family: sans-serif;
     font-size: 16px;
     width: 300px;
+    padding: 0px 120px 0px 20px;
+}
+.errors{
+    color:  rgba(243, 111, 111, 0.877);
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 300px;
+    text-align: start;
 }
 .creacuenta{
     background-color: rgb(37, 119, 212);
@@ -60,6 +80,7 @@ h1 {
     width: 300px;
     border-bottom: 1px solid rgba(211, 210, 210, 0.87);
     margin:auto;
+    padding: 25px 60px 0px 30px;
 }
 
 .pieRegistro{
@@ -75,6 +96,12 @@ p {
     font-size: 16px;
     width: 660px;
     margin: auto;
+}
+p .detail {
+    color: #ffff;
+    font-size: 16px;
+    width: 660px;
+    margin:auto;
 }
 .Ingresa {
     background-image: url("../images/mujer-registro-2.png");
@@ -102,9 +129,6 @@ p {
     padding: 20px;
     width: 510px;
     height: 150px;
-
-    
-
 }
 
 .antepie{
@@ -132,16 +156,16 @@ p {
 .login .form-input{
     margin: 40px 10px 5px 48px;
     border-radius: 5px;
-    border: 1px solid rgba(211, 210, 210, 0.87);
+    border: 2px solid rgba(211, 210, 210, 0.87);
 }
 .form-input{
     color: rgb(136, 132, 132, 0.877);
     font-size: 12px;
     text-align: start;
-    margin: 10px 90px 20px 48px;
+    margin: 10px 90px 2px 48px;
     border-radius: 20px;
     border-style: none;
-    padding: 1px 150px 20px 10px;
+    padding: 1px 150px 12px 10px;
 
 }
 .registrarcon{
@@ -163,7 +187,8 @@ p {
     margin: 10px 90px 20px 48px;
     border-radius: 20px;
     border-style: none;
-    padding: 1px 220px 15px 10px;
+    padding: 1px 310px 20px 10px;
+    width:160px;
 }
 .form-relac{
     color: rgb(136, 132, 132, 0.877);
@@ -199,20 +224,18 @@ p {
 
 }
 .login{
-    background-color: rgb(202, 204, 206);
+    
     border-radius: 20px 20px 0px 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    height: 430px;
-    width: 760px;   
-    margin: 159px 444px 73px 334px;
-
+    border-right: 10px;
+    
 }
 .olvide{
     color:  rgb(37, 119,212);
     font-family: sans-serif;
     font-size: 12px;
-    width: 680px;
+    width: 450px;
 }
 .login2  {
     background-color: rgb(37, 119,212);
@@ -264,16 +287,13 @@ header{
     background: rgb(67, 53, 187);
     
 }
-
-.imagen1{
-    background: rgb(67, 53, 187);
-    padding: 15px;
-}
 .dataproduct{
     margin: 10px;
     text-align: end;
     
 }
+
+/* CSS de Product */
 H2{
     color: white;
     font-family:Arial, Helvetica, sans-serif;
@@ -287,7 +307,11 @@ H3{
     font-size: 16px; 
     width: 655px;
 }
-.caja1  {
+.imagen1{
+    background: rgb(67, 53, 187);
+    padding: 15px;
+}
+.informacion  {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     display: inline-block;
@@ -303,9 +327,10 @@ H3{
     border-radius: 20px;
     margin-right: 750px;
     border: solid;
-    width:655px; 
+    width:655px;
+    
 }
-.planEstudio p{
+.planEstudio {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(67, 53, 187);
@@ -313,8 +338,9 @@ H3{
     border-style: solid;
     border-radius: 20px;
     margin-right: 750px;
-
+    text-align: auto;
 }
+
 .row1{
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(8, 161, 207);
@@ -388,7 +414,7 @@ p .star{
     background-color:  rgb(8, 161, 207);
     font-size: 15px;
     text-align: end;
-    width: 380px;
+    width: 500px;
 }
 .infofooter{
     color:white;

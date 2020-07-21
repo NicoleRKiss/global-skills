@@ -13,6 +13,7 @@ var loginRouter = require('./routes/login');
 var productRouter = require('./routes/product');
 var carritoRouter = require('./routes/carrito');
 var categoriaRouter = require('./routes/categoria');
+var listaProductosRouter = require('./routes/listaProductos');
 var app = express();
 
 // view engine setup
@@ -24,7 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(session({secret:"mensaje secreto"}));
+app.use(session({secret:"mensaje secreto",  resave: false, saveUninitialized: true}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -34,6 +35,7 @@ app.use('/login', loginRouter);
 app.use('/product', productRouter);
 app.use('/carrito',carritoRouter);
 app.use('/categoria',categoriaRouter);
+app.use('/listaProductos',listaProductosRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

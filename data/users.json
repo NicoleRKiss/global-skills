@@ -2,67 +2,9 @@
  {
   "id": " ",
   "Nombre": "Oscar",
-  "apellido": "Baez",
-  "Email": "Emailo@sahdask",
-  "password": "123456"
- },
- {
-  "id": " ",
-  "Nombre": "Oscar",
-  "apellido": "Apellido",
+  "Apellido": "Baez",
   "Email": "Emailoscar@gmail.com",
-  "password": "12345678"
- },
- {
-  "id": " ",
-  "Nombre": [
-   "Nombre",
-   "REGISTRATE USANDO GMAIL"
-  ],
-  "apellido": [
-   "Apellido",
-   "REGISTRATE USANDO FACEBOOK"
-  ],
-  "Email": "Emailo@sahdask",
-  "password": ""
- },
- {
-  "id": " ",
-  "Nombre": [
-   "Valeria",
-   "REGISTRATE USANDO GMAIL"
-  ],
-  "apellido": [
-   "Apellido",
-   "REGISTRATE USANDO FACEBOOK"
-  ],
-  "Email": "Emailo@sahdask",
-  "password": "123456"
- },
- {
-  "id": " ",
-  "Nombre": [
-   "Valeria",
-   "REGISTRATE USANDO GMAIL"
-  ],
-  "apellido": [
-   "Apellido",
-   "REGISTRATE USANDO FACEBOOK"
-  ],
-  "Email": "Emailo@sahdask",
-  "password": ""
- },
- {
-  "id": " ",
-  "Nombre": [
-   "Nombre",
-   "REGISTRATE USANDO GMAIL"
-  ],
-  "apellido": [
-   "Apellido",
-   "REGISTRATE USANDO FACEBOOK"
-  ],
-  "Email": "nickyrk@gmail.com",
-  "password": ""
+  "password": "$2a$10$hB1.fNQLK7XZhb5xUMxIuOEWCwch/ETH/3i79Xvt0Lihg1/g9NMKK",
+  "remember": "on"
  }
 ]
