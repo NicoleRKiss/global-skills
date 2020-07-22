@@ -9,7 +9,16 @@ module.exports = (sequelize, dataTypes) => {
 
         nombre : {
             type: dataTypes.STRING,
-        }  
+        },
+        apellido : {
+            type: dataTypes.STRING,
+        },
+        email : {
+            type: dataTypes.STRING,
+        },
+        password : {
+            type: dataTypes.STRING(300),
+        }    
     }
 
     const usuario = sequelize.define(alias, cols);

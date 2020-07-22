@@ -8,7 +8,7 @@ module.exports = (sequelize, dataTypes) => {
       },
 
       nombre : {
-          type: dataTypes.STRING,
+          type: dataTypes.STRING(400),
       },
 
       descripcion : {
@@ -16,8 +16,24 @@ module.exports = (sequelize, dataTypes) => {
       },
 
       precio : {
-          type: dataTypes.INTEGER,
-      }     
+          type: dataTypes.TEXT,
+      },
+
+      planId : {
+        foreignKey: "planes.id",
+      },
+
+      idiomaId : {
+        foreignKey: "idiomas.id",
+      },
+
+      categoriaId : {
+        foreignKey: "categorias.id",
+      },
+
+      profesorId : {
+        foreignKey: "profesor.id",
+      }             
   }
 
   const producto = sequelize.define(alias, cols);

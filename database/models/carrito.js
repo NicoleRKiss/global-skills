@@ -9,12 +9,16 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true,
         },
   
-        nombre : {
-            type: dataTypes.STRING,
+        usuarioId : {
+            foreignKey: "usuarios.id",
         },
   
-        precio : {
-            type: dataTypes.INTEGER,
+        productoId : {
+            foreignKey: "productos.id",
+        },
+  
+        productoNombre : {
+            foreignKey: "productos.nombre",
         }
     }
   

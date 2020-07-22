@@ -1,7 +1,6 @@
-
 module.exports = (sequelize, dataTypes) => {
 
-    let alias = "Curso";
+    let alias = "Tema";
     let cols = {
         id : {
             type: dataTypes.INTEGER,
@@ -9,21 +8,19 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true,
         },
   
-        nombre : {
+        tema : {
             type: dataTypes.STRING,
         },
-  
-        precio : {
-            type: dataTypes.INTEGER,
-        },
-  
-        descripcion : {
-            type: dataTypes.STRING,
+        
+        planId: {
+            foreignKey: "planes.id",
         }
+
+    
     }
   
-    const curso = sequelize.define(alias, cols);
+    const tema = sequelize.define(alias, cols);
   
-    return curso 
+    return tema 
   
   }
