@@ -11,7 +11,7 @@
     </head>
 <body class= "body1">
 
-        <form action="/register" method="POST">
+        <form action="/register" method="POST" enctype="multipart/form-data">
         <div class="register">
             <h1>Crear Cuenta</h1>
                 <label for="name" class="form-label"></label>
@@ -65,7 +65,14 @@
             
                 <label for="apellido" class="form-label"></label>
                 <input type="text" id="apellido" name="" class="registrarcon" value= "REGISTRATE USANDO FACEBOOK">
-          
+                <div class="multer">
+                    <label for="image" class="form-label col-12">Avatar:</label>
+                    <input type="file" id="image" name="image" class="form-file col-12">
+                    <div class="col-12">
+                        <p class="error"><%= typeof errors == 'undefined' ? null : errors.image ? errors.image.msg : null %></p>
+                    </div>
+
+
             <input type="submit" id="Crear cuenta" name="" placeholder="" class="form-Cuenta" value= "CREAR CUENTA">
             <article class="Recordarme">
             <label>

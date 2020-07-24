@@ -5,6 +5,8 @@ const { validationResult }= require('express-validator');
 const bcryptjs = require ('bcryptjs');
 const { check } = require('express-validator');
 
+
+
 const registerController ={
     index: function(req,res){
         return res.render('register');
@@ -12,15 +14,14 @@ const registerController ={
 },
        store : function(req, res){
            let errors = validationResult(req);
-           //console.log(errors);
-           //return res.send((errors));
            
            if(errors.isEmpty()){
            delete req.body.retypePassword;
            req.body.password = bcryptjs.hashSync(req.body.password, 10);
            let user = {
                id:" ",
-               ...req.body
+               ...req.body,
+               image: req.file.filename
            }
 
            let users = fs.readFileSync(path.join(__dirname,'..', 'data', 'users.json'), 'utf-8');
@@ -33,8 +34,6 @@ const registerController ={
            return res.redirect('/');
 
         } else {
-            //console.log(errors.errors);
-            //return res.send(errors.mapped());
             return res.render('register', { errors : errors.mapped() });
         }
 }

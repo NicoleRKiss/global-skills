@@ -4,7 +4,8 @@
   "Nombre": "Oscar",
   "Apellido": "Baez",
   "Email": "Emailoscar@gmail.com",
-  "password": "$2a$10$hB1.fNQLK7XZhb5xUMxIuOEWCwch/ETH/3i79Xvt0Lihg1/g9NMKK",
-  "remember": "on"
+  "password": "$2a$10$dptNjftl32EA/ATTaLF.A.eR/RkMf5xHA0tDpQeTPjCz14TOVYTNu",
+  "remember": "on",
+  "image": "image-1595596038400.png"
  }
 ]

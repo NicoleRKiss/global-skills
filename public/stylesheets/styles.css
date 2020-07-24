@@ -52,6 +52,15 @@ h1 {
     text-align: start;
     margin: auto;
 }
+.multer{
+    color:  rgb(134, 134, 134);
+    font-family: sans-serif;
+    font-size: 18px;
+    width: 340px;
+    height:20px;
+    text-align: start;
+    margin: auto;
+}
 .usando{
     color:  rgba(136, 132, 132, 0.877);
     font-family: sans-serif;
