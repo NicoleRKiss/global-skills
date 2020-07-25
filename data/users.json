@@ -1,11 +1,29 @@
 [
  {
-  "id": " ",
+  "id": "1",
   "Nombre": "Oscar",
   "Apellido": "Baez",
   "Email": "Emailoscar@gmail.com",
   "password": "$2a$10$dptNjftl32EA/ATTaLF.A.eR/RkMf5xHA0tDpQeTPjCz14TOVYTNu",
   "remember": "on",
   "image": "image-1595596038400.png"
+ },
+ {
+  "id": "2",
+  "Nombre": "eluney",
+  "Apellido": "iza",
+  "Email": "eluneyiza99@gmail.com",
+  "password": "$2a$10$3QUN6fjrijPA69eWL.DqkeORpRNz/3XhFhptVvWKx.2fPpeLx662G",
+  "remember": "on",
+  "image": "image-1595610124197.png"
+ },
+ {
+  "id": " ",
+  "Nombre": "prueba",
+  "Apellido": "prueba",
+  "Email": "Emailwwww@gmail.com",
+  "password": "$2a$10$bYTbR3bM62a5dhTjQRlVm.OyOYRMZpTx12kQtsEt2sdEeWx2MdL/.",
+  "remember": "on",
+  "image": "image-1595710139078.jpg"
  }
 ]

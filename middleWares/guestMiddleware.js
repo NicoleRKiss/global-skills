@@ -1,8 +1,9 @@
+let locals = require('../controllers/loginController');
 function guestMiddleware (req, res, next){
-    if (req.session.usuarioLogueado == undefined){
+    if (!req.session.user){
         next();
     } else {
-        res.send ('Esta pagina es solo para invitados')
+        res.redirect('/');
     }
 
 }

@@ -34,7 +34,7 @@ let upload = multer({ storage: storage,
 })
 
 /* GET users listing. */
-router.get('/', registerController.index);
+router.get('/',guestMiddleware,registerController.index);
 //router.post('/', registerController.store);
 
 router.post('/', upload.single('image'), validator.register, registerController.store);
