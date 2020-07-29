@@ -5,8 +5,8 @@ const bcrypt = require('bcryptjs');
 // Middlewares propios
 
 const json = require('../models');
-const User = json('register');
-
+const User = json('users');
+// const {User}= require('../database/models');
 module.exports = {
   register: 
     [
@@ -17,23 +17,44 @@ module.exports = {
       .bail()
 
     ],
-  login: [
-    body("email")
-      .notEmpty()
-      .withMessage("Campo obligatorio")
-      .bail()
-      .custom((value, { req }) => {
-        const user = User.findBySomething((user) => user.email == value);
-
-        if (user) {
-          return bcrypt.compareSync(req.body.password, user.password);
-        } else {
-          return false;
-        }
-      })
-      .withMessage("Email o contraseña inválidos"),
-    body("password").notEmpty().withMessage("Campo obligatorio"),
-  ],
+    login: [
+      body("Email")
+        .notEmpty()
+        .withMessage("Campo obligatorio")
+        .bail()
+        .custom((value, { req }) => {
+          const user = User.findBySomething((user) => user.Email == value);
+  
+          if (user) {
+            return bcrypt.compareSync(req.body.password, user.password);
+          } else {
+            return false;
+          }
+        })
+        .withMessage("Email o contraseña inválidos"),
+      body("password").notEmpty().withMessage("Campo obligatorio"),
+    ],
+  // login: [
+  //   body("Email")
+  //     .notEmpty()
+  //     .withMessage("Campo obligatorio")
+  //     .bail()
+  //     .custom((value, { req }) => {
+  //      return User.findOne({
+  //        where:{email: value}
+  //      })
+  //      .then((user)=>{
+  //        if(user){
+  //         if(bcrypt.compareSync(!req.body.password,user.password)){
+  //           return Promise.reject('email o password invalidos');
+  //         }
+  //        }else{
+  //         return Promise.reject('email o password invalidos');
+  //        }
+  //      })
+  //     })
+      
+  // ],
 };
 
 
