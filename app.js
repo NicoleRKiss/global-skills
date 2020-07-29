@@ -15,6 +15,9 @@ var productRouter = require('./routes/product');
 var carritoRouter = require('./routes/carrito');
 var categoriaRouter = require('./routes/categoria');
 var listaProductosRouter = require('./routes/listaProductos');
+var crudProductosRouter = require('./routes/crudProductos');
+var editarProductosRouter = require('./routes/editarProductos');
+
 var app = express();
 
 // view engine setup
@@ -28,9 +31,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 app.use(log);
-
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -38,9 +39,13 @@ app.use('/register', registerRouter);
 app.use('/register/ingreso', ingresoRouter);
 app.use('/login', loginRouter);
 app.use('/product', productRouter);
+app.use('/crudProductos', crudProductosRouter);
 app.use('/carrito',carritoRouter);
 app.use('/categoria',categoriaRouter);
 app.use('/listaProductos',listaProductosRouter);
+app.use('/editarProductos', editarProductosRouter);
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

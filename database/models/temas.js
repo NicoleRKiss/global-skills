@@ -11,12 +11,7 @@ module.exports = (sequelize, dataTypes) => {
         tema : {
             type: dataTypes.STRING,
         },
-        
-        planId: {
-            foreignKey: "planes.id",
-        }
-
-    
+            
     }
   
     const tema = sequelize.define(alias, cols);

@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado de Productos</title>
+    <style>
+        body {
+            font-family: courier, serif;
+        }
+    </style>
 </head>
 <body>
     <h1>LISTADO DE PRODUCTOS</h1>
     <ul>
         <% for (let i=0; i < productos.length;i++){ %>
         <li>
-            <%= productos[i].nombre %> 
+            <a href="/listaProductos/<%=productos[i].id%>">
+                <% if (productos[i].categorias) {%>
+                <%= productos[i].nombre %> - <%=productos[i].categorias.nombre %>
+                <% } %>
+            </a>
         </li>
-        
+        <%} %>
     </ul>
+
 
     
 </body>

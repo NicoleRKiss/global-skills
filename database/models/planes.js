@@ -12,9 +12,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING,
         },
   
-        idiomaId : {
-            foreignKey: "idiomas.id"
-        }
+       
     }
   
     const plan = sequelize.define(alias, cols);

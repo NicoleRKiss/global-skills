@@ -1,3 +1,5 @@
 .DS_Store
 node_modules
 database/config/config.js
+package.json
+package-lock.json

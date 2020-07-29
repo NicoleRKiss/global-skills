@@ -1,4 +1,5 @@
 
+
 module.exports = (sequelize, dataTypes) => {
 
     let alias = "Carrito";
@@ -9,17 +10,7 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true,
         },
   
-        usuarioId : {
-            foreignKey: "usuarios.id",
-        },
-  
-        productoId : {
-            foreignKey: "productos.id",
-        },
-  
-        productoNombre : {
-            foreignKey: "productos.nombre",
-        }
+       
     }
   
     const carrito = sequelize.define(alias, cols);

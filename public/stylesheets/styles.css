@@ -22,6 +22,15 @@ h1 {
     border-bottom: 1px solid rgba(211, 210, 210, 0.87);
     margin: 20px;
 }
+.tituloIngresa {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(134, 134, 134);
+    border-bottom: 1px solid rgba(211, 210, 210, 0.87);
+    margin: 20px 525px 20px 50px;
+}
 .register {
     background-color: rgb(233, 235, 234);
     font-size: 30px;
@@ -103,7 +112,7 @@ h1 {
 p {
     color: #ffff;
     font-size: 16px;
-    width: 660px;
+    width: 880px;
     margin: auto;
 }
 p .detail {
@@ -222,13 +231,12 @@ p .detail {
 
 
 .body3 {
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-image: url(../images/fondo-log-in.png);
-    background-size:cover;
-    font-size: 12px;
-    text-align: center;
-    margin: 159px 444px 73px 334px;
+    background-image: url(../images/3300036.jpg);
+    background-size:1500px 900px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 250px 500px 300px 450px;
     
 
 }
