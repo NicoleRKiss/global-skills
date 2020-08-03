@@ -6,12 +6,46 @@
     margin-top:50px;
     margin-bottom: 25px;
 }
+a
+.listHeader{
+    padding: 15px;
+    width: 30%;
+}
+.logof img,
+.logo img {
+    width:70%;
+    height: auto; 
+}
+.logof img{
+    padding-top: 10%;
+}
+.carrito img{
+    width: 40px;
+}
+
+.uno{
+    margin-top: 15px;
+    margin-left: 2%;
+}
+
 .disclaimer{
     background-color: #3CB9E2;
     margin-top: 0px;
     padding: 10px;
     font-weight: 300;
     font-size: 1rem;
+}
+.menu{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.enlaces{
+      display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 20%;
 }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -113,7 +147,7 @@ p {
     color: #ffff;
     font-size: 16px;
     width: 880px;
-    margin: auto;
+    text-align:start;
 }
 p .detail {
     color: #ffff;
@@ -205,7 +239,7 @@ p .detail {
     margin: 10px 90px 20px 48px;
     border-radius: 20px;
     border-style: none;
-    padding: 1px 310px 20px 10px;
+    padding: 1px 10px 20px 10px;
     width:160px;
 }
 .form-relac{
@@ -310,139 +344,5 @@ header{
     
 }
 
-/* CSS de Product */
-H2{
-    color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: start;
-    border-bottom: 2px solid white;
-    width:655px;   
-}
-H3{
-    color:white ;
-    font-family: Arial, Helvetica, sans-serif;  
-    font-size: 16px; 
-    width: 655px;
-}
-.imagen1{
-    background: rgb(67, 53, 187);
-    padding: 15px;
-}
-.informacion  {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    display: inline-block;
-    column-count: 2;
-}
 
-.modalidad{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(67, 53, 187);
-    color:white;
-    background-color: none;
-    text-decoration: none;
-    border-radius: 20px;
-    margin-right: 750px;
-    border: solid;
-    width:655px;
-    
-}
-.planEstudio {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(67, 53, 187);
-    text-decoration: none;
-    border-style: solid;
-    border-radius: 20px;
-    margin-right: 750px;
-    text-align: auto;
-}
-
-.row1{
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(8, 161, 207);
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    text-decoration: none;
-    list-style-type: none;
-}
-.row2{
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(8, 161, 207);
-    margin:auto;
-    width: auto;
-    text-align: center;
-}
-.container2{
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(119, 123, 124);
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    text-decoration: none;
-    list-style-type: none;
-
-}
-.cursosRel {
-    background-color:  rgb(8, 161, 207);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    height:80px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.cursosRel {
-    background-color:  rgb(8, 161, 207);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    height:80px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-.fixed {
-    background-color:  rgb(198, 215, 221);
-
-    font-family: Arial, Helvetica, sans-serif;
-    position:fixed;
-    text-align:start;
-    border-radius: 20px;
-    right: 10%;
-    top:10%;
-}    
-.font{
-    color: rgb(43, 42, 42);
-    font-size: 16px;
-    width: 660px;
-}
-.far fa-star{
-    right: 10%;
-}
-
-
-
-p .star{
-    background-color:  rgb(8, 161, 207);
-    font-size: 15px;
-    text-align: end;
-    width: 500px;
-}
-.infofooter{
-    color:white;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: justify;
-  }
-.Footer{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: khaki;
-}
 

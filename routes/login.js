@@ -8,8 +8,8 @@ const validator = require('../middlewares/validator');
 
 /* GET users listing. */
 router.get('/', authMiddleware, loginController.index);
-// router.get('/login', loginController.login);
-router.post('/',validator.login,loginController.processLogin);
+router.get('/login', loginController.login);
+//router.post('/',validator.login,loginController.processLogin);
 router.post('/logout', loginController.logout);
 // [
 

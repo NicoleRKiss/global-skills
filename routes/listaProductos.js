@@ -6,4 +6,5 @@ let listaProductoController = require ('../controllers/listaProductoController')
 router.get('/', listaProductoController.list);
 router.get('/:id', listaProductoController.detail);
 
+
 module.exports = router;

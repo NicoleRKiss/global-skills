@@ -46,6 +46,6 @@ module.exports = (sequelize, dataTypes) => {
     })
 
   }
-  return producto 
+  return producto
 
 }

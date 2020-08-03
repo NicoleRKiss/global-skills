@@ -1,5 +1,5 @@
-const bcryptjs = require("bcryptjs");
-const db = require('../database/models')
+const db = require('../database/models');
+const sequelize = db.sequelize;
 
 const productController ={
     index: function(req,res){
@@ -7,9 +7,23 @@ const productController ={
     },
 
     add: function(req,res){
-        res.render("CrearProducto")
+        res.render("CrudProductos")
 
     },
-      
+    
+    detail: function (req, res) {
+        db.Producto.findByPk(req.params.id)
+            .then(function (Producto) {
+                res.render("product", { Producto: Producto });
+            })
+    },
+     delete: function (req, res) {
+        db.Producto.destroy({
+            where:{
+                id: req.params.id
+            }    
+    }),
+                res.redirect("/product");
+     },
 }
 module.exports = productController;

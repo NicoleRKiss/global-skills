@@ -44,10 +44,18 @@ h1{
 }
 ul{
     margin-top: 0px;
+
+}
+.listado{
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+    text-align: left;
+
 }
 ul li{
     list-style: none;
     padding-right: 6%;
+    
 }
 a
 .listHeader{
@@ -119,6 +127,11 @@ span{
 .cont{
     width: 75%;
     text-align: left;
+}
+.contListado {
+    text-align: initial;
+    text-decoration: none;
+    color:white;
 }
 .cont p{
     font-size: 1.5rem;
@@ -295,6 +308,175 @@ footer p{
     padding-left: 1.8%;
     
 }
+
+/* CSS de Product */
+
+
+
+.descProduct{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: start;
+    border-bottom: 2px solid white;
+    width:655px;   
+}
+
+.detProduct{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: start;
+    width:650px;   
+}
+.curso{
+    color: white;
+    font-family: 'Hind', sans-serif;
+    text-align: start;
+    width:655px;   
+    font-size:30px;
+}
+.cursoAR{
+    color: white;
+    font-family: sans-serif;
+    text-align: start;
+    width:655px;   
+    font-size:45px;
+}
+H3{
+    color:white ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    font-size: 16px; 
+    width: 655px;
+}
+.imagen1{
+   padding: 55px 850px 5px 10px;
+}
+.informacion  {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    column-count: 2;
+    color: white;
+    text-align: start;
+    padding: 10px 0px 46px 0px;
+}
+
+.modalidad{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color: none;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 750px;
+    border: solid;
+    width:655px;
+    text-align: start;
+}
+
+.planEstudio {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(67, 53, 187);
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 20px;
+    margin-right: 750px;
+    text-align: auto;
+}
+
+.row1{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(8, 161, 207);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-decoration: none;
+    list-style-type: none;
+}
+.row2{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(8, 161, 207);
+    margin:auto;
+    width: auto;
+    text-align: center;
+}
+.container2{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(119, 123, 124);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.comprarAhora{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    border-radius: 10px;
+    border-bottom: 1px solid rgb(114, 113, 113);
+}
+
+.fixed {
+    background-color:  rgb(198, 215, 221);
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    text-align:start;
+    border-radius: 20px;
+    right: 10%;
+    top:30%;
+    bottom: 30%;
+    padding: 15px 230px 0px 30px;
+    float:left;
+    width:30%;
+
+}   
+.promoFixed{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:start;
+    color:rgb(43, 42, 42);
+    font-size:20px;
+    
+}
+.botonFixed{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    border-radius: 10px;
+    border-bottom: 1px solid rgb(114, 113, 113);
+    
+} 
+.font{
+    color: rgb(43, 42, 42);
+    font-size: 16px;
+    width: 350px;
+}
+.far fa-star{
+    right: 10%;
+}
+p .star{
+    background-color:  rgb(8, 161, 207);
+    font-size: 15px;
+    text-align: end;
+    width: 500px;
+}
+.infofooter{
+    color:white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+.Footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: khaki;
+}
+.imagenProd{
+border: 50px;
+}
+
 @media(min-width:320px) and (max-width:767px){
     html, body {
         max-width: 100%;

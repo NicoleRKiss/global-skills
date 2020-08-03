@@ -16,7 +16,7 @@ const crudController = {
               profesorId:req.body.profesorId
           });
         res.redirect('/listaProductos');
-        }
+      }
      
 }
 module.exports = crudController;
