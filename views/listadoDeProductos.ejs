@@ -35,25 +35,12 @@
 
     <div class="container-fluid">
     
-        <nav class="menu">
-            <a href="index.html" class="logo"><img src="../images/LOGO.png" alt="logo"></a>
-            <ul class="enlaces">
-                <li class="listHeader"><a href="#carrito" class="carrito"><img src="../images/carrito.png"
-                            alt="Carrito"></a></li>
-                <li class="listHeader"><button type="button" class="">INGRESA</button></li>
-                <li class="listHeader uno">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </li>
-            </ul>
-   
-        </nav>
+        <%- include('partials/header') %>
 
     <div>
-        <h1>LISTADO DE PRODUCTOS</h1>
+        <h1 class="text-center">LISTADO DE PRODUCTOS</h1>
 
-           <ul class="listado">
+           <ul class="listado text-center">
                     <% for (let i=0; i < productos.length;i++){ %>
                 <li>
                     <a class="contListado" href="/listaProductos/<%=productos[i].id%>">
@@ -79,41 +66,7 @@
 </div>
 
     
-<footer class="container-fluid menu ft">
-
-    <ul>
-        <p>Nosotros</p>
-        <li><a href="">Quienes Somos</a></li>
-        <li><a href="">Terminos y condiciones</a></li>
-        <li><a href="">Poltica y Privacidad</a></li>
-
-    </ul>
-
-    <ul>
-        <p>Info</p>
-        <li><a href="">Cursos</a></li>
-        <li><a href="">Profesores</a></li>
-        <li><a href="">Regalos</a></li>
-    </ul>
-
-
-    <ul>
-        <p>Medios</p>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Linkedin</a></li>
-    </ul>
-
-    <ul>
-        <p>Contacto</p>
-        <li><a href="">Necesito Ayuda</a></li>
-        <li><a href="">Ingresa</a></li>
-        <li><a href="">Registrate</a></li>
-
-    </ul>
-    <a href="index.html" class="logoF"><img src="../images/LOGO.png" alt="logo" class="logo"></a>
-</footer>
+<%- include('partials/footer') %>
     
 </body>
 </html>

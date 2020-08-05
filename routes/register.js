@@ -37,7 +37,7 @@ let upload = multer({ storage: storage,
 router.get('/',guestMiddleware,registerController.index);
 //router.post('/', registerController.store);
 
-router.post('/', upload.single('image'), validator.register, registerController.store);
+router.post('/', upload.single('image'), validator.register, registerController.create);
 
 
 module.exports = router;

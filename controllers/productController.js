@@ -7,7 +7,7 @@ const productController ={
     },
 
     add: function(req,res){
-        res.render("CrudProductos")
+        res.render("CrudProductos");
 
     },
     
@@ -23,7 +23,7 @@ const productController ={
                 id: req.params.id
             }    
     }),
-                res.redirect("/product");
+                res.redirect("/listaProductos");
      },
 }
 module.exports = productController;

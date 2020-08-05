@@ -1,6 +1,8 @@
 const json = require("../models");
 const User = json("users");
 
+const db = require('../database/models');
+
 const bcrypt = require("bcryptjs");
 const { validationResult } = require("express-validator");
 const loginController ={
@@ -48,20 +50,19 @@ const loginController ={
         if(errors.isEmpty()){
          
         
-          let user = User.findBySomething(user => user.Email == req.body.Email);
-    
-          delete user.password;
-    
-          req.session.user = user;
+          db.Usuario.findOne({
+            where:{email: req.body.Email}
+          })
+          .then(function(user){
+            req.session.user = user;
     
           if (req.body.remember) {
-    
             res.cookie('email', user.Email, { maxAge: 1000 * 60 * 60 * 24 });
-    
           }
     
           return res.redirect('/');
-    
+          })
+          
         } else {
          
           return res.render("login", { errors: errors.mapped()});

@@ -24,7 +24,7 @@ const editarProductosController = {
             }
        })
 
-      res.redirect("/editarProductos/edit/" + req.params.id)
+      res.redirect("/listaProductos");
    }
 
 }

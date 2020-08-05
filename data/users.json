@@ -1,3 +1,20 @@
 [
- 
+ {
+  "id": " ",
+  "Nombre": "eluney",
+  "Apellido": "iza",
+  "Email": "eluneyiza99@gmail.com",
+  "password": "$2a$10$F3ciV6Rg.N1EtIEYID/CoeQzVooGghZP2WipPH8UJ0npQAEpJHyW.",
+  "remember": "on",
+  "image": "image-1596574174116.jpg"
+ },
+ {
+  "id": " ",
+  "Nombre": "eluney",
+  "Apellido": "iza",
+  "Email": "eluneyiza99@gmail.com",
+  "password": "$2a$10$dsZ9nDe3SZile8OjuKjE6eXpbitXZRjstM5RqFBAVCR17csE.NniC",
+  "remember": "on",
+  "image": "image-1596632906007.png"
+ }
 ]

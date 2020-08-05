@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Global Skills</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel = "stylesheet" href = "../css/all.min.css">
+    <script src="https://kit.fontawesome.com/fb000fb5ed.js"></script>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class="container">
+    <h1 class="text-center" style="text-transform: uppercase;">Hola <%= locals.user.nombre %> <%= locals.user.apellido %>!</h1>
+    <h2>Tu email es: <%= locals.user.email %></h2>
+    <div>
+    <img src="../public/images/avatar/<%=locals.user.image%>" alt="" style="height: 200px;">
+</div>
+    
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>
