@@ -1,9 +1,6 @@
-<% if (locals.user) { %>
+<% if (locals.user.admin) { %>
     <form action="/product/delete/<%=Producto.id%>" method="POST">
         <button class="listHeader" type="submit">DELETE</button>
     </form>
     <button class="listHeader"><a href="/editarProductos/edit/<%=Producto.id%>">EDITAR</a></button>
-    <% } else {%>
-
-        
-        <% }%>
+    <% } %>
