@@ -1,159 +1,9 @@
-/*register */
 
-.body1{
-    background-image: url("../images/fondo-registro-1.png");
-    background-size:cover;
-    margin-top:50px;
-    margin-bottom: 25px;
-}
-a
-.listHeader{
-    padding: 15px;
-    width: 30%;
-}
-.logof img,
-.logo img {
-    width:70%;
-    height: auto; 
-}
-.logof img{
-    padding-top: 10%;
-}
-.carrito img{
-    width: 40px;
-}
-
-.uno{
-    margin-top: 15px;
-    margin-left: 2%;
-}
-
-.disclaimer{
-    background-color: #3CB9E2;
-    margin-top: 0px;
-    padding: 10px;
-    font-weight: 300;
-    font-size: 1rem;
-}
-.menu{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
 .enlaces{
       display:flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 20%;
-}
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    text-align: center;
-    font-size: 25px;
-    color: rgb(134, 134, 134);
-    border-bottom: 1px solid rgba(211, 210, 210, 0.87);
-    margin: 20px;
-}
-.tituloIngresa {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    text-align: center;
-    font-size: 25px;
-    color: rgb(134, 134, 134);
-    border-bottom: 1px solid rgba(211, 210, 210, 0.87);
-    margin: 20px 525px 20px 50px;
-}
-.register {
-    background-color: rgb(233, 235, 234);
-    font-size: 30px;
-    text-align: center;
-    border-radius: 20px;
-    border: 1px solid rgba(211, 210, 210, 0.87);
-    box-sizing: border-box;
-    height: 730px;
-    width: 600px;   
-    margin: auto;
-
-
-}
-.minimo{
-    color:  rgb(134, 134, 134);
-    font-family: sans-serif;
-    font-size: 12px;
-    width: 300px;
-    text-align: center;
-    margin: auto;
-}
-.Recordarme{
-    color:  rgb(134, 134, 134);
-    font-family: sans-serif;
-    font-size: 18px;
-    width: 340px;
-    height:20px;
-    text-align: start;
-    margin: auto;
-}
-.multer{
-    color:  rgb(134, 134, 134);
-    font-family: sans-serif;
-    font-size: 18px;
-    width: 340px;
-    height:20px;
-    text-align: start;
-    margin: auto;
-}
-.usando{
-    color:  rgba(136, 132, 132, 0.877);
-    font-family: sans-serif;
-    font-size: 16px;
-    width: 300px;
-    padding: 0px 120px 0px 20px;
-}
-.errors{
-    color:  rgba(243, 111, 111, 0.877);
-    font-family: sans-serif;
-    font-size: 16px;
-    width: 300px;
-    text-align: start;
-}
-.creacuenta{
-    background-color: rgb(37, 119, 212);
-    font-size: 12px;
-    text-align: center;
-    border-radius: 20px;
-    border-bottom: 1px solid rgba(211, 210, 210, 0.87);
-}
- .antePieRegistro{
-    color:  rgb(109, 107, 107);
-    font-family: sans-serif;
-    font-size: 10px;
-    width: 300px;
-    border-bottom: 1px solid rgba(211, 210, 210, 0.87);
-    margin:auto;
-    padding: 25px 60px 0px 30px;
-}
-
-.pieRegistro{
-    color:  rgb(134, 134, 134);
-    font-family: sans-serif;
-    font-size: 12px;
-    width: 370px;
-    margin:auto;
-    
-}
-p {
-    color: #ffff;
-    font-size: 16px;
-    width: 880px;
-    text-align:start;
-}
-p .detail {
-    color: #ffff;
-    font-size: 16px;
-    width: 660px;
-    margin:auto;
 }
 .Ingresa {
     background-image: url("../images/mujer-registro-2.png");
@@ -205,43 +55,6 @@ p .detail {
     vertical-align: middle;
     
 }
-.login .form-input{
-    margin: 40px 10px 5px 48px;
-    border-radius: 5px;
-    border: 2px solid rgba(211, 210, 210, 0.87);
-}
-.form-input{
-    color: rgb(136, 132, 132, 0.877);
-    font-size: 12px;
-    text-align: start;
-    margin: 10px 90px 2px 48px;
-    border-radius: 20px;
-    border-style: none;
-    padding: 1px 150px 12px 10px;
-
-}
-.registrarcon{
-    color: rgb(136, 132, 132, 0.877);
-    font-size: 12px;
-    text-align: start;
-    margin: 10px 90px 20px 48px;
-    border-radius: 20px;
-    border-style: none;
-    padding: 1px 150px 20px 10px;
-    width:160px;
-
-}
-.form-Cuenta{
-    color: rgba(252, 249, 249, 0.877);
-    font-size: 12px;
-    text-align: center;
-    background-color: rgb(37, 119, 212);
-    margin: 10px 90px 20px 48px;
-    border-radius: 20px;
-    border-style: none;
-    padding: 1px 10px 20px 10px;
-    width:160px;
-}
 .form-relac{
     color: rgb(136, 132, 132, 0.877);
     font-size: 12px;
@@ -263,31 +76,13 @@ p .detail {
     margin: auto;
 }
 
+.menu{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
 
-.body3 {
-    background-image: url(../images/3300036.jpg);
-    background-size:1500px 900px;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 250px 500px 300px 450px;
-    
-
-}
-.login{
-    
-    border-radius: 20px 20px 0px 0px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    box-sizing: border-box;
-    border-right: 10px;
-    
-}
-.olvide{
-    color:  rgb(37, 119,212);
-    font-family: sans-serif;
-    font-size: 12px;
-    width: 450px;
-}
 .login2  {
     background-color: rgb(37, 119,212);
     color: white;
@@ -298,12 +93,7 @@ p .detail {
     text-decoration-color: none;
     
 }
-.registrate{
-    color:  rgb(37, 119, 212);
-    font-family: sans-serif;
-    font-size: 16px;
-    width: 770px;
-}
+
 a {
     color:white;
     text-decoration: none;

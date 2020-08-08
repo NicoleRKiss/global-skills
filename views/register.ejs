@@ -4,16 +4,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/estilos.css">
         <title>Registro</title>
 
-        <link rel = "stylesheet" href = "../stylesheets/styles.css">
-        
     </head>
 <body class= "body1">
 
         <form action="/register" method="POST" enctype="multipart/form-data">
         <div class="register">
-            <h1>Crear Cuenta</h1>
+            <h1 class="regist">Crear Cuenta</h1>
                 <label for="name" class="form-label"></label>
                 <input type="text" id="nombre" name="Nombre" placeholder="Nombre" class="form-input">
                 <p class="errors">
@@ -22,7 +21,7 @@
                             <%= errors.Nombre.msg %>
                         <% } %>
                     <% } %>
-                </p>|
+                </p>
             
                 <label for="apellido" class="form-label"></label>
                 <input type="text" id="apellido" name="Apellido" placeholder="Apellido" class="form-input">
@@ -74,11 +73,6 @@
 
 
             <input type="submit" id="Crear cuenta" name="" placeholder="" class="form-Cuenta" value="CREAR CUENTA">
-            <article class="Recordarme">
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Recordarme</label>
-            </article>
-
             <p class="antePieRegistro">Al crear esta cuenta usted acepta nuestras Políticas de Privacidad y Términos del servicio</p> 
             </article>
             <br>

@@ -4,44 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITAR CURSOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilos.css">
+
     <title>EDITAR Usuario</title>
 </head>
 
 <body>
+        <%- include('partials/header')%>
     <form action="/editarUsuarios/edit/<%=Usuario.id%>" method="POST">
         <h1>EDITAR Usuario</h1>
-        <div class="form-group row">
+        <div class="form-group row text-center">
             <label for="nombre" class="col-sm-2 col-form-label col-form-label-sm">Nombre</label>
             <div class="col-sm-10">
-                <input type="text" name="nombre" class="form-control form-control-sm" id="nombre" placeholder="" value="<%=Usuario.nombre%>">
+                <input type="text" name="nombre" class="form-control form-control-lg" id="nombre" placeholder="" value="<%=Usuario.nombre%>">
             </div>
             <br>
         </div>
 
-        <div class="form-group row">
-            <label for="apellido" class="col-sm-2 col-form-label">Apellido</label>
+        <div class="form-group row text-center">
+            <label for="apellido" class="col-sm-2 col-form-label col-form-label-sm">Apellido</label>
             <div class="col-sm-10">
-                <input type="text" name="apellido" class="form-control" id="apellido" placeholder=" " value="<%=Usuario.apellido%>">
+                <input type="text" name="apellido" class="form-control form-control-lg" id="apellido" placeholder=" " value="<%=Usuario.apellido%>">
             </div>
             <br>
         </div>
-        <div class="form-group row">
-            <label for="email" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+        <div class="form-group row text-center">
+            <label for="email" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
             <div class="col-sm-10">
                 <input type="email" name="email" id="email" class="form-control form-control-lg" placeholder="" value="<%=Usuario.email%>">
             </div>
         </div>
         <br>
-        <div class="form-group row">
-            <label for="password" class="col-sm-2 col-form-label col-form-label-lg">password</label>
+        <div class="form-group row text-center">
+            <label for="password" class="col-sm-2 col-form-label col-form-label-sm">password</label>
             <div class="col-sm-10">
                 <input type="password" name="password" id="password" class="form-control form-control-lg" placeholder="" value="<%=Usuario.password%>">
             </div>
         </div>
         <br>
-        <input type="submit" id="Crear cuenta" name="submit" placeholder="" class="form-Cuenta" value="Modificar">
+        <input type="submit" id="Crear cuenta" name="submit" placeholder="" class="form-Cuenta btn btn-danger mb-5" value="Modificar">
     </form>
-
+<%- include('partials/footer') %>
 </body>
 
 </html>

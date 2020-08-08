@@ -45,7 +45,7 @@
                 <li>
                     <a class="contListado" href="/listaProductos/<%=productos[i].id%>">
                     <% if (productos[i].categorias) {%>
-                    <%= productos[i].nombre %> 
+                    <%= productos[i].nombre%> 
                     <% } %>
                     </a>
                 </li>
@@ -53,17 +53,6 @@
             </ul>
 
         </div>
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Marketing Digit</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-</div>
 
     
 <%- include('partials/footer') %>
