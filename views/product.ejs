@@ -1,83 +1,97 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Product</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        
-        <link rel="stylesheet" href="/css/estilos.css">
-        <link rel = "stylesheet" href = "../css/all.min.css">
-        <script src="https://kit.fontawesome.com/fb000fb5ed.js"></script>
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <script src="https://kit.fontawesome.com/fb000fb5ed.js"></script>
+
+</head>
 
 <body>
-                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-                <div class="producto">
-    <h4 class="disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quibusdam assumenda labore ipsam
-        magni pariatur, nihil commodi quasi doloribus vel! Illum quaerat dolore magnam suscipit at aliquid, laudantium eius
-        eaque.</h4>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <div class="producto">
+        <h4 class="disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quibusdam assumenda
+            labore ipsam
+            magni pariatur, nihil commodi quasi doloribus vel! Illum quaerat dolore magnam suscipit at aliquid,
+            laudantium eius
+            eaque.</h4>
         <%- include('partials/header') %>
-               
-    <section class="imagen1">
+
+        <section class="imagen1">
             <article class="">
                 <div class="imagenProd">
                     <img class="image" src="../images/comunicacion-ejecutiva-gloobal.png">
-                      
+
                 </div>
-            
-            <li class="curso"><%=Producto.nombre%></li>
-            <br>
-            <li class="cursoAR">AR$<%=Producto.precio%></li>
-              
-            <br>
-            <br>
-            <br>
-            <h2 class="descProduct">INFORMACION</h2>
+
+                <li class="curso"><%=Producto.nombre%></li>
+                <br>
+                <li class="cursoAR">AR$<%=Producto.precio%></li>
+
+                <br>
+                <br>
+                <br>
+                <h2 class="descProduct">INFORMACION</h2>
                 <div>
                     <ul class="informacion">
-				        <li><a <i class="far fa-heart"></i> Empieza y termina a tu tiempo</a></li>
-				        <li><a <i class="far fa-check-circle"></i>  Curso Completo</a>
-				        <li><a <i class="far fa-play-circle"></i>  XX clases más archivos adjuntos</a></li>
-				        <li><a <i class="fas fa-backward"></i>  Re hace el curso cuantas veces quieras</a></li>
-				        <li><a <i class="far fa-file-word"></i>  desarrolla un trabajo práctico</a></li>
-				        <li><a <i class="fas fa-bullhorn"></i>  Idioma: Español / Inglés</a></li>
-			        </ul>
-                </div>        
-            </article>
-            
-            <article class="modalidad">
-            
-                <h3> Modalidad Digital</h3>    
-                    <ul>
-                        <li>Cursos 100% prácticos con grupos reducidos</li>
-                        <li>Clase en tiempo real por video conferencia</li>
-                        <li>Profesor disponible para hacer consultas en vivo</li>
-                        <li>Grabación de las clases disponibles para ver luego</li>
-                        <li>Asistencia administrativa personalizada todos los días</li>
+                        <li><a <i class="far fa-heart"></i> Empieza y termina a tu tiempo</a></li>
+                        <li><a <i class="far fa-check-circle"></i> Curso Completo</a>
+                        <li><a <i class="far fa-play-circle"></i> XX clases más archivos adjuntos</a></li>
+                        <li><a <i class="fas fa-backward"></i> Re hace el curso cuantas veces quieras</a></li>
+                        <li><a <i class="far fa-file-word"></i> desarrolla un trabajo práctico</a></li>
+                        <li><a <i class="fas fa-bullhorn"></i> Idioma: Español / Inglés</a></li>
                     </ul>
+                </div>
+            </article>
+
+            <article class="modalidad">
+
+                <h3> Modalidad Digital</h3>
+                <ul>
+                    <li>Cursos 100% prácticos con grupos reducidos</li>
+                    <li>Clase en tiempo real por video conferencia</li>
+                    <li>Profesor disponible para hacer consultas en vivo</li>
+                    <li>Grabación de las clases disponibles para ver luego</li>
+                    <li>Asistencia administrativa personalizada todos los días</li>
+                </ul>
 
             </article>
-                <br>
-        
-                <h2 class="descProduct">Plan de Estudios</h2>
-                     <p class="detProduct">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex cupiditate aliquid maxime quidem maiores, ducimus veritatis libero porro perspiciatis, tenetur rem blanditiis sed aperiam beatae provident. Minima voluptates est commodi dolores ipsa perferendis veritatis soluta minus repellat, nulla corporis at voluptatem odit quasi quibusdam. Minus, libero delectus! Hic, doloribus magni? ipsum dolor sit amet consectetur adipisicing elit. Quia, accusantium, labore atque velit, delectus mollitia sapiente necessitatibus dignissimos assumenda minima molestiae eveniet est nobis voluptatibus.</p>
-    
-              
-                <h2 class="descProduct">Descripción</h2>
-            
+            <br>
+
+            <h2 class="descProduct">Plan de Estudios</h2>
+            <p class="detProduct">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex cupiditate aliquid maxime
+                quidem maiores, ducimus veritatis libero porro perspiciatis, tenetur rem blanditiis sed aperiam beatae
+                provident. Minima voluptates est commodi dolores ipsa perferendis veritatis soluta minus repellat, nulla
+                corporis at voluptatem odit quasi quibusdam. Minus, libero delectus! Hic, doloribus magni? ipsum dolor
+                sit amet consectetur adipisicing elit. Quia, accusantium, labore atque velit, delectus mollitia sapiente
+                necessitatibus dignissimos assumenda minima molestiae eveniet est nobis voluptatibus.</p>
+
+
+            <h2 class="descProduct">Descripción</h2>
+
             <li class="detProduct"><%=Producto.descripcion%></li>
-            
+
 
             <br>
             <br>
             <article>
                 <h2 class="descProduct">PREGUNTAS FRECUENTES</h2>
-        
+
                 <ul class="detProduct">
                     <li>¿Que es la modalidad digital?</li>
                     <li>¿Cuales cursos puedo hacer con modalidad digital?</li>
@@ -87,31 +101,17 @@
                 </ul>
             </article>
 
-<button class="listHeader"><a href="/product/delete/<%=Producto.id%>">DELETE</a></button>
+            <button class="listHeader"><a href="/product/delete/<%=Producto.id%>">DELETE</a></button>
 
-<button class="listHeader"><a href="/editarProductos/edit/<%=Producto.id%>">EDITAR</a></button>
+            <button class="listHeader"><a href="/editarProductos/edit/<%=Producto.id%>">EDITAR</a></button>
 
             <%- include('partials/admin') %>
-    </section>
+        </section>
 
         <h2 class="row2">CURSOS RELACIONADOS</h2>
-        <div class= "container2">
-            
-            <div class="row1">     
-                   
-                <article class="col-md-3 ">         
-                        <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
-                        <ul class="info">
-                            <li>Curso de Marketing Online</li>
-                            <li>Programa Integral</li>
-                            <li>Por Nombre Apellido</li>
-                        </ul>
- 
-                           <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></p>
-                            <p><i class="fas fa-shopping-cart"></i>
-                            <button class="comprarAhora"><a href="/carrito/">Comprar Ahora</a></button>
-                                                            
-                </article> 
+        <div class="container2">
+
+            <div class="row1">
 
                 <article class="col-md-3 ">
                     <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
@@ -120,90 +120,76 @@
                         <li>Programa Integral</li>
                         <li>Por Nombre Apellido</li>
                     </ul>
-                
+
                     <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></p>
-                    <i class="fas fa-shopping-cart"></i><button class="comprarAhora"><a href="/carrito/">Comprar Ahora</a></button>
-                
+                    <p><i class="fas fa-shopping-cart"></i>
+                        <button class="comprarAhora"><a href="/carrito/">Comprar Ahora</a></button>
+
                 </article>
-     
-                <article class="col-md-3 ">         
-                        <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
-                        <ul >    
-                            <li>Curso de Google Adwords y</li>
-                            <li>Posicionamiento en Google</li>
-                            <li>Por Nombre Apellido</li>
-                        </ul>
-                            <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></a></p> 
-                            <p><i class="fas fa-shopping-cart"></i>
-                    <button class="comprarAhora"><a href="/carrito/">Comprar Ahora</a></button>
-                    </article>
-                    
-                    <article class="col-md-3">         
-                        <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
-                        <ul class="info">
-                            <li>Curso de Marketing</li>
-                            <li>de Contenidos</li>
-                            <li>Por Nombre Apellido</li>
-                        </ul>
-                            <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></p> 
-                            <p><i class="fas fa-shopping-cart"></i>
-                    <button class="comprarAhora"><a href="/carrito/">Comprar Ahora</a></button>
-        
-                    </article>         
+
+                <article class="col-md-3 ">
+                    <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
+                    <ul class="info">
+                        <li>Curso de Marketing Online</li>
+                        <li>Programa Integral</li>
+                        <li>Por Nombre Apellido</li>
+                    </ul>
+
+                    <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></p>
+                    <i class="fas fa-shopping-cart"></i><button class="comprarAhora"><a href="/carrito/">Comprar
+                            Ahora</a></button>
+
+                </article>
+
+                <article class="col-md-3 ">
+                    <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
+                    <ul>
+                        <li>Curso de Google Adwords y</li>
+                        <li>Posicionamiento en Google</li>
+                        <li>Por Nombre Apellido</li>
+                    </ul>
+                    <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></a></p>
+                    <p><i class="fas fa-shopping-cart"></i>
+                        <button class="comprarAhora"><a href="/carrito/">Comprar Ahora</a></button>
+                </article>
+
+                <article class="col-md-3">
+                    <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
+                    <ul class="info">
+                        <li>Curso de Marketing</li>
+                        <li>de Contenidos</li>
+                        <li>Por Nombre Apellido</li>
+                    </ul>
+                    <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></p>
+                    <p><i class="fas fa-shopping-cart"></i>
+                        <button class="comprarAhora"><a href="/carrito/">Comprar Ahora</a></button>
+
+                </article>
             </div>
-        
-        </div>   
-    <footer class="container-fluid menu">
-    
-        <ul>
-            <p>Nosotros</p>
-            <li><a href="">Quienes Somos</a></li>
-            <li><a href="">Terminos y condiciones</a></li>
-            <li><a href="">Politica y Privacidad</a></li>
-    
-        </ul>
-    
-        <ul>
-            <p>Info</p>
-            <li><a href="">Cursos</a></li>
-            <li><a href="">Profesores</a></li>
-            <li><a href="">Regalos</a></li>
-        </ul>
-    
-    
-        <ul>
-            <p>Medios</p>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Linkedin</a></li>
-        </ul>
-    
-        <ul>
-            <p>Contacto</p>
-            <li><a href="">Necesito Ayuda</a></li>
-            <li><a href="">Ingresa</a></li>
-            <li><a href="">Registrate</a></li>
-    
-        </ul>
-        <a href="index.html" class="logoF"><img src="../images/LOGO.png" alt="logo" class="logo"></a>
-    </footer>
 
-<div class="fixed">
-    <article>
-        <p class="promoFixed"><%=Producto.nombre%></p>
-        <p class="promoFixed">Curso dado por:</p>
-        
+        </div>
+        <%- include('partials/footer')  %>
 
-        <p class="promoFixed">AR$<%=Producto.precio%><a href=<i class="far fa-star"></i></a></p>
-        <p>
-            
-<button class="botonFixed"><a href="/carrito/">Comprar Ahora</a></button>
+        <div class="fixed">
+            <article>
+                <p class="promoFixed"><%=Producto.nombre%></p>
+                <p class="promoFixed">Curso dado por:</p>
 
-<button class="botonFixed"><a href="/carrito/lleno/">Agregar a mi Carrito</a></button>
-        </p>
-    </article>
-</div>
-</div>
+
+                <p class="promoFixed">AR$<%=Producto.precio%><a href=<i class="far fa-star"></i></a></p>
+                <form action="/carrito/addToCart" method="POST">
+                    <label class="promoFixed" for="quantity">cantidad</label>
+                    <input class="botonFixed" type="number" id="quantity" name="quantity" value="1">
+                    <p class="error">
+                        <%=  typeof errors== 'undefined' ? '' : errors.quantity ? errors.quantity.msg : ''%> </p>
+                    <input type="hidden" name="productId" value="<%= Producto.id %>">
+                    <button class="botonFixed" type="submit">Agregar a mi Carrito</button>
+                </form>
+
+
+            </article>
+        </div>
+    </div>
 </body>
+
 </html>

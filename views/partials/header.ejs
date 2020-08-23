@@ -1,33 +1,33 @@
 <% if (locals.user) { %>
-    <nav class="menu">
-        <a href="/" class="logo"><img src="../images/LOGO.png" alt="logo"></a>
-        <ul class="enlaces">
-            <li class="listHeader"><form action="/login/logout" method="POST">
-                <button class="logout" type="submit">
-                    Cerrar sesión <i class="fas fa-sign-in-alt"></i>
-                </button>
-            </form></li>
-            
-            <li class="listHeader"><button type="button" class=""><a href="/userProfile"> Hola <%=locals.user.nombre%>!</a></button></li>
-            <li class="listHeader uno">
-                <span></span>
-                <span></span>
-                <span></span>
-            </li>
-        </ul>
-
-    <% } else {%>
 <nav class="menu">
     <a href="/" class="logo"><img src="../images/LOGO.png" alt="logo"></a>
-    <ul class="enlaces">
-        <li class="listHeader"><a href="#carrito" class="carrito"><img src="../images/carrito.png" alt="Carrito"></a></li>
-        <li class="listHeader"><button type="button" class="" ><a href="/login" class="">INGRESA</a></button></li>
-        <li class="listHeader uno">
-            <span></span>
-            <span></span>
-            <span></span>
+    <ul class="">
+        <li class="">
+            <form action="/login/logout" method="POST">
+                <button class="" type="submit">
+                    Cerrar sesión <i class="fas fa-sign-in-alt"></i>
+                </button>
+            </form>
+        </li>
+
+        <li class=""><button type="button" class=""><a href="/userProfile"> Hola <%=locals.user.nombre%>!</a></button>
+        </li>
+        <li class="">
+            <button type="button" class=""><a href="/categoria" class="">Categoria</a>
+                <button type="button" class=""><a href="/listaProductos" class="">Cursos</a>
+
         </li>
     </ul>
 
-    <% }%>
-</nav>
+    <% } else {%>
+    <nav class="menu">
+        <a href="/" class="logo"><img src="../images/LOGO.png" alt="logo"></a>
+        <ul class="">
+            <li class=""><a href="#carrito" class="carrito"><img src="../images/carrito.png" alt="Carrito"></a></li>
+            <li class="listHeader"><button type="button" class=""><a href="/login" class="">INGRESA</a></button></li>
+            <button type="button" class=""><a href="/categoria" class="">Categoria</a>
+                <button type="button" class=""><a href="/listaProductos" class="">Cursos</a>
+
+        </ul>
+        <% }%>
+    </nav>
