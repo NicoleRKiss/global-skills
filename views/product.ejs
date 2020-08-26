@@ -32,17 +32,18 @@
             eaque.</h4>
         <%- include('partials/header') %>
 
-        <section class="imagen1">
+        <section class="imagen1 pl-5">
             <article class="">
-                <div class="imagenProd">
-                    <img class="image" src="../images/comunicacion-ejecutiva-gloobal.png">
+            <div class="border modalidad p-2">
+                <div class="imagenProd text-center">
+                    <img class="image pt-3" src="../images/comunicacion-ejecutiva-gloobal.png">
 
                 </div>
 
-                <li class="curso"><%=Producto.nombre%></li>
+                <li class="curso list-unstyled text-center"><%=Producto.nombre%></li>
                 <br>
-                <li class="cursoAR">AR$<%=Producto.precio%></li>
-
+                <li class="cursoAR list-unstyled text-center">AR$<%=Producto.precio%></li>
+            </div>
                 <br>
                 <br>
                 <br>
@@ -59,7 +60,7 @@
                 </div>
             </article>
 
-            <article class="modalidad">
+            <article class="modalidad p-2">
 
                 <h3> Modalidad Digital</h3>
                 <ul>
@@ -101,9 +102,7 @@
                 </ul>
             </article>
 
-            <button class="listHeader"><a href="/product/delete/<%=Producto.id%>">DELETE</a></button>
-
-            <button class="listHeader"><a href="/editarProductos/edit/<%=Producto.id%>">EDITAR</a></button>
+            
 
             <%- include('partials/admin') %>
         </section>
@@ -178,7 +177,7 @@
 
                 <p class="promoFixed">AR$<%=Producto.precio%><a href=<i class="far fa-star"></i></a></p>
                 <form action="/carrito/addToCart" method="POST">
-                    <label class="promoFixed" for="quantity">cantidad</label>
+                    <label class="promoFixed" for="quantity">Cantidad</label>
                     <input class="botonFixed" type="number" id="quantity" name="quantity" value="1">
                     <p class="error">
                         <%=  typeof errors== 'undefined' ? '' : errors.quantity ? errors.quantity.msg : ''%> </p>
