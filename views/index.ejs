@@ -24,10 +24,9 @@
     <%- include('partials/header') %>
 
     <!-- HOME PAGE IMAGEN -->
-    <div>
-      <h1>GLOBAL SKILLS</h1>
-      <H3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi corporis inventore accusamus velit dolorum doloremque?</H3>
-      <img src="../images/chica-home.png" alt="" class="nosotros">
+    <div class="container-fluid">
+      <h1 class="txt-center">GLOBAL SKILLS</h1>
+      <img src="../images/chica-home.png" alt="" class="nosotros container-fluid p-0 m-0">
       <i class="fas fa-ellipsis-h" id="puntitos"></i>
     </div>
 
@@ -112,7 +111,9 @@
 
     <!-- TRES CATEGORIAS DE CURSOS-->
     <div class="categorias">
-      <ul class="categoriasIndividuales">
+      <div class="container-fluid">
+        <div class="row">
+        <ul class="categoriasIndividuales col-sm">
         <li><img src="../images/marketing-digital-home.png" alt="" class="prod"></li>
         <li>MARKETING DIGITAL</li>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque sequi reiciendis nam nemo vero?</li>
@@ -121,35 +122,38 @@
         
       </ul>
       
-      <ul class="categoriasIndividuales">
+      <ul class="categoriasIndividuales col-sm">
         <li><img src="../images/gestion-y-management-home.png" alt="" class="prod"></li>
         <li>GESTION Y MANAGEMENT</li>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque sequi reiciendis nam nemo vero?</li>
         <i class="fas fa-plus"></i>
         <li>CURSOS</li>
       </ul>
-      <ul class="categoriasIndividuales">
+      <ul class="categoriasIndividuales col-sm">
         <li><img src="../images/comunicacion-ejecutiva-gloobal.png" alt="" class="prod"></li>
         <li>COMUNICACION EJECUTIVA GLOBAL</li>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque sequi reiciendis nam nemo vero?</li>
         <i class="fas fa-plus"></i>
         <li>CURSOS</li>
 
-      </ul>
-     
+        </ul>
+      </div>
+    </div>
     <!-- TEXTO LOS PRESENTANDO A LOS CURSOS POPULARES-->
     <div class="tituloHome celeste">
       <h2>LOS CURSOS MÁS POPULARES</h2>
     </div>
 
     <!-- LOS CURSOS MAS POPULARES-->
-    <div class="card celeste" id="card">
-        <ul class="cursos">
+    <div class="card celeste container-fluid" id="card">
+      <div class="row">
+        <ul class="cursos col-6">
+
               <li><img src="../images/dummyprod.jpg" alt="" class="prod"></li>
-              <li><h3>Curso de Marketing Online- Programa Integral</h3></li>
+              <li><h3 class="text-center">Curso de Marketing Online- Programa Integral</h3></li>
               <li><h4>Por: Nombre Apellido</h4></li>
               <li> 
-                <p>Ar$ xxxx</p> 
+                <p class="text-center">Ar$ xxxx</p> 
                 <i class="far fa-star"></i>
               </li>
               <li>
@@ -157,12 +161,12 @@
                 <button class="comprar">Comprar ahora</button>
               </li>
           </ul>
-          <ul class="cursos">
+          <ul class="cursos col-6">
               <li><img src="../images/dummyprod.jpg" alt="" class="prod"></li>
               <li><h3>Curso de Community Manager - Introducción I</h3></li>
               <li><h4>Por: Nombre Apellido</h4></li>
               <li> 
-                <p>Ar$ xxxx</p> 
+                <p class="text-center">Ar$ xxxx</p> 
                 <i class="far fa-star"></i>
               </li>
               <li>
@@ -170,12 +174,12 @@
                 <button class="comprar">Comprar ahora</button>
               </li>
           </ul>
-          <ul class="cursos">
+          <ul class="cursos col-6">
               <li><img src="../images/dummyprod.jpg" alt="" class="prod"></li>
               <li> <h3>Curso de Google Adwords y posicionamiento en Google</h3> </li>
               <li><h4>Por: Nombre Apellido</h4> </li>
               <li> 
-                <p>Ar$ xxxx</p> 
+                <p class="text-center">Ar$ xxxx</p> 
                 <i class="far fa-star"></i>
               </li>
               <li>
@@ -183,12 +187,12 @@
                 <button class="comprar">Comprar ahora</button>
               </li>
           </ul>
-          <ul class="cursos">
+          <ul class="cursos col-6">
             <li><img src="../images/dummyprod.jpg" alt="" class="prod"></li>
             <li> <h3>Curso de Marketing de Contenidos</h3> </li>
             <li> <h4>Por: Nombre Apellido</h4> </li>
             <li> 
-              <p>Ar$ xxxx</p> 
+              <p class="text-center">Ar$ xxxx</p> 
               <i class="far fa-star"></i>
             </li>
             <li>
@@ -197,9 +201,10 @@
             </li>
         </ul>
       </div>
+      </div>
 
     <!-- INFORMACION DE CONTACTO-->
-    <div class="tituloHome">
+    <div class="tituloHome pb-5 pt-5">
       <h2>CONTACTO</h2>
       <h4>Preguntanos lo que quieras</h4>
       <i class="far fa-envelope"></i>
