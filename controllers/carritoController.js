@@ -1,4 +1,4 @@
-// const DB = require('../database/models');
+//const DB = require('../database/models');
 const {Producto, Item} = require('../database/models');
 
 
@@ -9,6 +9,7 @@ const carritoController ={
     full: function(req,res){
         return res.render('carritolleno');
     },
+    
 cart(req, res) {
         //muestro los items del carrito
         item.findAll({

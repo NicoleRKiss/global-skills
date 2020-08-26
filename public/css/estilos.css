@@ -24,7 +24,27 @@ El azul oscuro (fondos) --> #2E3192
 El celeste (fondos) y en tipografías --> #3CB9E2
 El Turquesa (para botón) --> #E6E6E6
 */
+/* Archivo Index (HOME)*/
 
+.categhome{
+
+    font-size: 14px;
+    float:left;
+}
+
+.detallecontainer{
+    font-size: 10px;
+}
+
+.bannerHome{
+    background-size: 25px;
+}
+.card{
+    float:left;    
+}
+.card-text{
+    float:left;   
+}
 body{
     box-sizing: border-box;
     margin: 0;
