@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/estilos.css">
@@ -17,45 +18,50 @@
         }
     </style>
 </head>
+
 <body>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-
-
-    <h4 class="disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quibusdam assumenda labore ipsam
-        magni pariatur, nihil commodi quasi doloribus vel! Illum quaerat dolore magnam suscipit at aliquid, laudantium eius
-        eaque.</h4>
+    <h4 class="disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quibusdam assumenda labore ipsam magni pariatur, nihil commodi quasi doloribus vel! Illum quaerat dolore magnam suscipit at aliquid, laudantium eius eaque.</h4>
 
     <div class="container-fluid">
-    
-        <%- include('partials/header') %>
 
-    <div>
-        <h1 class="text-center">LISTADO DE PRODUCTOS</h1>
+        <nav class="menu">
+            <a href="index.html" class="logo"><img src="../images/LOGO.png" alt="logo"></a>
 
-           <ul class="listado text-center">
-                    <% for (let i=0; i < productos.length;i++){ %>
-                <li>
-                    <a class="contListado" href="/listaProductos/<%=productos[i].id%>">
-                    <% if (productos[i].categorias) {%>
-                    <%= productos[i].nombre%> 
-                    <% } %>
-                    </a>
+        </nav>
+        <h1>LISTADO DE PRODUCTOS</h1>
+
+    <% for (let i=0; i < productos.length;i++){ %>
+        <div class="card" style="width: 50rem;">
+
+            <div class="card-body">
+                <div class="card-header">
+                    <li>
+                        <% if (productos[i].categorias) {%>
+                        <%= productos[i].nombre %>
+                </div>
+                <br>
+                <%= productos[i].descripcion %>
+                <% } %>
+                </a>
                 </li>
-                <%} %>
-            </ul>
+            </div>
+            <a href="/listaProductos/<%=productos[i].id%>" class="btn btn-primary">Ir a curso</a>
 
         </div>
 
-    
-<%- include('partials/footer') %>
-    
+    </div>
+    <%} %>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

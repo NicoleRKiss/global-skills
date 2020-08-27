@@ -24,6 +24,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+       
     <div class="producto">
         <h4 class="disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quibusdam assumenda
             labore ipsam
@@ -31,9 +32,27 @@
             laudantium eius
             eaque.</h4>
         <%- include('partials/header') %>
-
+            
         <section class="imagen1 pl-5">
+         
+                <article class="fixed">
+                    <p class="promoFixed"><%=Producto.nombre%></p>
+                    <p class="promoFixed">Curso dado por:</p>
+    
+    
+                    <p class="promoFixed">AR$<%=Producto.precio%><a href=<i class="far fa-star"></i></a></p>
+                    <form action="/carrito/addToCart" method="POST">
+                        <label class="promoFixed" for="quantity">Cantidad</label>
+                        <input class="botonFixed" type="number" id="quantity" name="quantity" value="1">
+                        <p class="error">
+                            <%=  typeof errors== 'undefined' ? '' : errors.quantity ? errors.quantity.msg : ''%> </p>
+                        <input type="hidden" name="productId" value="<%= Producto.id %>">
+                        <button class="botonFixed" type="submit">Agregar a mi Carrito</button>
+                    </form>
+                </article>
+          
             <article class="">
+
             <div class="border modalidad p-2">
                 <div class="imagenProd text-center">
                     <img class="image pt-3" src="../images/comunicacion-ejecutiva-gloobal.png">
@@ -44,6 +63,7 @@
                 <br>
                 <li class="cursoAR list-unstyled text-center">AR$<%=Producto.precio%></li>
             </div>
+            
                 <br>
                 <br>
                 <br>
@@ -105,8 +125,9 @@
             
 
             <%- include('partials/admin') %>
+            
         </section>
-
+        
         <h2 class="row2">CURSOS RELACIONADOS</h2>
         <div class="container2">
 
@@ -169,25 +190,7 @@
         </div>
         <%- include('partials/footer')  %>
 
-        <div class="fixed">
-            <article>
-                <p class="promoFixed"><%=Producto.nombre%></p>
-                <p class="promoFixed">Curso dado por:</p>
-
-
-                <p class="promoFixed">AR$<%=Producto.precio%><a href=<i class="far fa-star"></i></a></p>
-                <form action="/carrito/addToCart" method="POST">
-                    <label class="promoFixed" for="quantity">Cantidad</label>
-                    <input class="botonFixed" type="number" id="quantity" name="quantity" value="1">
-                    <p class="error">
-                        <%=  typeof errors== 'undefined' ? '' : errors.quantity ? errors.quantity.msg : ''%> </p>
-                    <input type="hidden" name="productId" value="<%= Producto.id %>">
-                    <button class="botonFixed" type="submit">Agregar a mi Carrito</button>
-                </form>
-
-
-            </article>
-        </div>
+       
     </div>
 </body>
 

@@ -17,11 +17,14 @@ cart(req, res) {
                 state: 1,
                 userId: req.session.id,
             },
-            include: ['Producto']
+            include: ['producto']
         })
-            .then(items => {
-                return res.render('carrito/lleno', { items });
+            .then(item => {
+                console.log(item)
+                return res.render('carrito/lleno', { item });
+
             })
+            
     },
 
     addToCart(req, res) {
@@ -45,7 +48,7 @@ cart(req, res) {
 
             })
             .then(() => res.redirect('/carrito/lleno'))
-            .catch(e => console.log(e))
+            //.catch(e => console.log(e))
     }
 }
 module.exports = carritoController;

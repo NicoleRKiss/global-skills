@@ -96,14 +96,39 @@ a
 }
 .disclaimer{
     background-color: #3CB9E2;
-    margin-top: 0px;
+    margin: 0px;
     padding: 10px;
     font-weight: 300;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.celeste {
+    background-color: #3CB9E2;
+}
+
+.celesteContador {
+    background-color: #3CB9E2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tituloHome {
+    margin-top: 3px;
+    padding-top: 10px;
+}
+
+.lineaIndex {
+    padding-bottom: 15px;
+}
+
+.frase {
+    text-align: left;
 }
 button{
     width: 150px;
-    height: 3vh;
+    height: 5vh;
     border-radius: 10px;
     color: grey;
     border: none;
@@ -112,8 +137,7 @@ button{
 .menu{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 .enlaces{
       display:flex;
@@ -144,7 +168,17 @@ span{
 
 .card-body{
     color: black;
+    font-family: 'Hind', sans-serif;
+   
 }
+
+.card-header{
+    color: rgb(88, 87, 87);
+    font-family: 'Hind', sans-serif;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
 .cont{
     width: 75%;
     text-align: left;
@@ -169,9 +203,12 @@ span{
 }
 
 .card{
-    margin-right: 15%;
+    margin-right: auto;
+    margin-left: auto;
     border: 3px solid rgba(0, 0, 0, 0.45);
     border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 0px;
 }
 .card,
 .cont h1{
@@ -446,7 +483,8 @@ H3{
 .fixed {
     background-color:  rgb(198, 215, 221);
     font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
+    position: fixed; 
+    /* era fixed */
     text-align:start;
     border-radius: 20px;
     right: 10%;
@@ -471,6 +509,11 @@ H3{
     border-bottom: 1px solid rgb(114, 113, 113);
     width: 165px;
     height: 5vh;
+}
+
+.categoriasCard{
+    display: flex;
+    flex-wrap: wrap;
 }
  
 .font{
@@ -526,7 +569,7 @@ border: 50px;
     border-radius: 20px;
     border: 1px solid rgba(211, 210, 210, 0.87);
     box-sizing: border-box;
-    height: 730px;
+    height: 850px;
     width: 600px;   
     margin: auto;
 }
@@ -639,7 +682,7 @@ p .detail {
 /* --------LOGIN ----------*/
 .body3 {
     background-image: url(../images/3300036.jpg);
-    background-size:1500px 900px;
+    background-size:100%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -657,14 +700,14 @@ p .detail {
     color:  rgb(37, 119,212);
     font-family: sans-serif;
     font-size: 12px;
-    width: 450px;
+  
     padding:10px 65px 10px 60px;
 }
 .Recordarme{
     color:  rgb(134, 134, 134);
     font-family: sans-serif;
     font-size: 18px;
-    width: 340px;
+    
     height:20px;
     text-align: start;
     padding:10px 65px 60px 60px;
@@ -675,18 +718,18 @@ p .detail {
     color:  rgb(37, 119, 212);
     font-family: sans-serif;
     font-size: 16px;
-    width: 770px;
-    padding: 5px 45px 5px 35px;
+  
 }
 
 .tituloIngresa {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     text-align: center;
-    font-size: 25px;
-    color: rgb(134, 134, 134);
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
     border-bottom: 1px solid rgba(211, 210, 210, 0.87);
-    margin: 20px 525px 0px 50px;
+   
 }
 .cuentaLogin{
     font-family: Arial, Helvetica, sans-serif;
@@ -696,7 +739,7 @@ p .detail {
     background-color: rgb(37, 119, 212);
     border-radius: 20px;
     border-style: none;
-    margin: 20px 525px 0px 130px;
+    
 }
 
 @media(min-width:320px) and (max-width:767px){
@@ -874,5 +917,8 @@ p .detail {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+.html{
+    overflow-x: unset;
 }
 }

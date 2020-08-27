@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<body class= "body3">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +11,9 @@
         <title>Login</title>
 
     </head>
+<body class= "body3">
 
-  
+  <div class="text-center">
 <form action="/login" method="POST">
 
     
@@ -42,19 +42,22 @@
             </p>
         </div>
         
-        <p class="olvide">Olvidé mi contraseña</p>
-        <article class="Recordarme">
-            <label for="remember" class="form-label">Recuérdame</label>
-			<input type="checkbox" id="remember" name="remember"  class="form-check">
+        <p class="olvide text-center">Olvidé mi contraseña</p>
+        <article class="Recordarme text-center">
+            <label for="remember" class="form-label d-inline">Recuérdame
+            <input type="checkbox" id="remember" name="remember"  class="form-check d-inline">
+        </label>
             </article>
         
-        <p>
+        <p class="text-center">
             <input type="submit" id="name" name="name" placeholder="" class="cuentaLogin" value="CONTINUAR">
         </p>
        
     </div>
-    <p class="registrate">¿No tenes usuario? <a class = "registrate" href ="register">Registrate</a></p>  
+    <p class="registrate text-center pr-2">¿No tenes usuario? <a class = "registrate text-center" href ="register">Registrate</a></p>  
 </form>
+
+</div>
 
 </body>
 </html>
