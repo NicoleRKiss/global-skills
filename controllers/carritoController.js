@@ -12,15 +12,15 @@ const carritoController ={
     
 cart(req, res) {
         //muestro los items del carrito
-        item.findAll({
+        Item.findAll({
             where: {
                 state: 1,
                 userId: req.session.id,
             },
-            include: ('product')
+            include: ['Producto']
         })
-            .then(item => {
-                return res.render('carrito/lleno', { item });
+            .then(items => {
+                return res.render('carrito/lleno', { items });
             })
     },
 
