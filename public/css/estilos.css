@@ -76,14 +76,39 @@ a
 }
 .disclaimer{
     background-color: #3CB9E2;
-    margin-top: 0px;
+    margin: 0px;
     padding: 10px;
     font-weight: 300;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.celeste {
+    background-color: #3CB9E2;
+}
+
+.celesteContador {
+    background-color: #3CB9E2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tituloHome {
+    margin-top: 3px;
+    padding-top: 10px;
+}
+
+.lineaIndex {
+    padding-bottom: 15px;
+}
+
+.frase {
+    text-align: left;
 }
 button{
     width: 150px;
-    height: 3vh;
+    height: 5vh;
     border-radius: 10px;
     color: grey;
     border: none;
@@ -92,8 +117,7 @@ button{
 .menu{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 .enlaces{
       display:flex;
@@ -149,9 +173,12 @@ span{
 }
 
 .card{
-    margin-right: 15%;
+    margin-right: auto;
+    margin-left: auto;
     border: 3px solid rgba(0, 0, 0, 0.45);
     border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 0px;
 }
 .card,
 .cont h1{
@@ -452,6 +479,11 @@ H3{
     border-bottom: 1px solid rgb(114, 113, 113);
     width: 165px;
     height: 5vh;
+}
+
+.categoriasCard{
+    display: flex;
+    flex-wrap: wrap;
 }
  
 .font{
