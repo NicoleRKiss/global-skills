@@ -16,11 +16,14 @@ cart(req, res) {
                 state: 1,
                 userId: req.session.id,
             },
-            include: ['Producto']
+            include: ['producto']
         })
-            .then(items => {
-                return res.render('carrito/lleno', { items });
+            .then(item => {
+                console.log(item)
+                return res.render('carrito/lleno', { item });
+
             })
+            
     },
 
     addToCart(req, res) {
