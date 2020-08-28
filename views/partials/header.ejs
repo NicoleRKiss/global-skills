@@ -1,62 +1,62 @@
 <% if (locals.user) { %>
-<nav class="menu">
-    <a href="/" class="logo"><img src="../images/LOGO.png" alt="logo"></a>
-    
-    <!-- <ul class="">
-        <li class="">
-            <form action="/login/logout" method="POST">
-                <button class="" type="submit">
-                    Cerrar sesión <i class="fas fa-sign-in-alt"></i>
-                </button>
-            </form>
-        </li>
-
-        <li class=""><button type="button" class=""><a href="/userProfile"> Hola <%=locals.user.nombre%>!</a></button>
-        </li>
-        <li class="">
-            <button type="button" class=""><a href="/categoria" class="">Categoria</a>
-                
-            <button type="button" class=""><a href="/listaProductos" class="">Cursos</a>
-
-        </li>
-    </ul> -->
-    <div class="btn-group">
-    <form action="/login/logout" method="POST" class="p-2">
-        <button  type="submit">
-            Cerrar sesión <i class="fas fa-sign-in-alt"></i>
-        </button>
-    </form>
-    <div class="p-2">
-        <button type="button" ><a href="/userProfile" class="text-decoration-none"> Hola <%=locals.user.nombre%>!</a></button>
-    </div>
-    <div class="p-2">
-        <button type="button"  ><a href="/categoria" class="text-decoration-none">Categoria</a>   
-    </div>
-    <div class="p-2">
-        <button type="button" class=""><a href="/listaProductos" class="text-decoration-none">Cursos</a>
-    </div>
-    </div>
-    <% } else {%>
     <nav class="menu">
-            <div class="p-2">
-                <a href="/" class="logo"><img src="../images/LOGO.png" alt="logo"></a>
-            </div>
+        <a href="/" class="logo"><img src="../images/LOGO.png" alt="logo"></a>
+        
+        <!-- <ul class="">
+            <li class="">
+                <form action="/login/logout" method="POST">
+                    <button class="" type="submit">
+                        Cerrar sesión <i class="fas fa-sign-in-alt"></i>
+                    </button>
+                </form>
+            </li>
+    
+            <li class=""><button type="button" class=""><a href="/userProfile"> Hola <%=locals.user.nombre%>!</a></button>
+            </li>
+            <li class="">
+                <button type="button" class=""><a href="/categoria" class="">Categoria</a>
+                    
+                <button type="button" class=""><a href="/listaProductos" class="">Cursos</a>
+    
+            </li>
+        </ul> -->
         <div class="btn-group">
-           
-            <div class="p-2">
-                <a href="#carrito" class="carrito"><img src="../images/carrito.png" alt="Carrito"></a>
-            </div>
-            <div class="p-2">
-                <button type="button" class=""><a href="/login" class="text-decoration-none">INGRESA</a>
-            </div>
-            <div class="p-2">
-                <button type="button" class=""><a href="/categoria" class="text-decoration-none">Categoria</a>
-            </div>
-            <div class="p-2">
-                <button type="button" class=""><a href="/listaProductos" class="text-decoration-none">Cursos</a>
-            </div>
+        <form action="/login/logout" method="POST" class="p-2">
+            <button  type="submit">
+                Cerrar sesión <i class="fas fa-sign-in-alt"></i>
+            </button>
+        </form>
+        <div class="p-2">
+            <button type="button" ><a href="/userProfile" class="text-decoration-none"> Hola <%=locals.user.nombre%>!</a></button>
         </div>
-
-
-        <% }%>
-    </nav>
+        <div class="p-2">
+            <button type="button"  ><a href="/categoria" class="text-decoration-none">Categoria</a>   
+        </div>
+        <div class="p-2">
+            <button type="button" class=""><a href="/listaProductos" class="text-decoration-none">Cursos</a>
+        </div>
+        </div>
+        <% } else {%>
+        <nav class="menu">
+                <div class="p-2">
+                    <a href="/" class="logo"><img src="../images/LOGO.png" alt="logo"></a>
+                </div>
+            <div class="btn-group">
+               
+                <div class="p-2">
+                    <a href="#carrito" class="carrito"><img src="../images/carrito.png" alt="Carrito"></a>
+                </div>
+                <div class="p-2">
+                    <button type="button" class=""><a href="/login" class="text-decoration-none">Ingresá</a>
+                </div>
+                <div class="p-2">
+                    <button type="button" class=""><a href="/categoria" class="text-decoration-none">Categoria</a>
+                </div>
+                <div class="p-2">
+                    <button type="button" class=""><a href="/listaProductos" class="text-decoration-none">Cursos</a>
+                </div>
+            </div>
+    
+    
+            <% }%>
+        </nav>
