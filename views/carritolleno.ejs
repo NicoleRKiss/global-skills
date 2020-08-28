@@ -37,15 +37,16 @@
                         <!-- <h3 class="pl-2 pt-2">Curso de Community Manager - Programa Integral</h3> -->
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </div>
+                    <% item.forEach(element => { %>
                     <div class="card-body cardBody">
                         <img src="../images/dummyprod.jpg" alt="" style="height: 100px;">
-                        <% item.forEach(element => { %>
-                         <p><%= element.productId %> </p>
-                        <% }) %>
+                        
+                         <p><%= element.nombre %> </p>
+                         <p>$<%= element.salePrice %> </p>
                         <!-- <h3 class="pl-2 pt-2">Curso de Community Manager - Programa Integral</h3> -->
                         <i class="fa fa-trash pb-5" aria-hidden="true"></i>
                     </div>
-                    
+                    <% }) %>
 
 
                 </div>

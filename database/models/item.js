@@ -35,6 +35,13 @@ module.exports = (sequelize, dataTypes) => {
         cartId: {
             type: dataTypes.INTEGER,
            
+        },
+        nombre:{
+            type: dataTypes.STRING,
+        }
+        ,
+        descripcion:{
+            type: dataTypes.STRING,
         }
 
     }

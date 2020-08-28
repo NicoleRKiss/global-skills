@@ -41,7 +41,9 @@ cart(req, res) {
                         productId: producto.id,
                         userId: req.session.user.id,
                         sellerId: producto.userId,
-                        cartId: null
+                        cartId: null,
+                        nombre: producto.nombre,
+                        descripcion: producto.descripcion
                     })
                 }
 
