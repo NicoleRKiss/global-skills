@@ -120,12 +120,12 @@
                     <li>¿Que cursos estan en Ingles?  <i class="fas fa-chevron-down"></i></li>
                     <li>Que otros idiomas tienen?  <i class="fas fa-chevron-down"></i></li>
                 </ul>
+                <form action="/product/delete/<%=Producto.id%>" method="POST">
+                    <button class="listHeader" type="submit">DELETE</button>
+                </form>
+                <button class="listHeader"><a href="/editarProductos/edit/<%=Producto.id%>">EDITAR</a></button>
             </article>
 
-            
-
-            <%- include('partials/admin') %>
-            
         </section>
         </div>
         <h2 class="row2">CURSOS RELACIONADOS</h2>
