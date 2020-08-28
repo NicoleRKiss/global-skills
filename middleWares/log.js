@@ -10,7 +10,7 @@ module.exports = (req, res, next) => {
     return next();
   } else if(req.cookies.email) {
     db.Usuario.findOne({
-            where:{email: req.body.Email}
+      where: { email: req.cookies.email}
           })
           .then(function(user){
             req.session.user = user;
