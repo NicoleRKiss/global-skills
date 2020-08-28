@@ -15,13 +15,12 @@ cart(req, res) {
         Item.findAll({
             where: {
                 state: 1,
-                userId: req.session.id,
-            },
-            include: ['producto']
+                userId: req.session.user.id,
+            }
         })
             .then(item => {
-                console.log(item)
-                return res.render('carrito/lleno', { item });
+                // return res.send(item)
+                return res.render('carritolleno', { item });
 
             })
             
@@ -29,7 +28,7 @@ cart(req, res) {
 
     addToCart(req, res) {
         //agregar un item al carrito
-        console.log(req.body.productId)
+        // console.log(req.body.productId)
         Producto.findByPk(req.body.productId)
             .then(producto => {
 
