@@ -47,7 +47,8 @@ cart(req, res) {
 
             })
             .then(() => res.redirect('/carrito/lleno'))
-            //.catch(e => console.log(e))
+            .catch(e => console.log(e))
     }
+
 }
 module.exports = carritoController;
