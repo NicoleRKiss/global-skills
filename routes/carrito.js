@@ -6,5 +6,6 @@ let carritoController = require ('../controllers/carritoController')
 router.get('/', carritoController.index);
 router.get('/lleno', carritoController.cart);
 router.post('/addToCart', carritoController.addToCart);
-
+router.post('/deleteFromCart', carritoController.deleteFromCart);
+router.post('/createCart', carritoController.createCart);
 module.exports = router;

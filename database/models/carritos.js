@@ -9,8 +9,13 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true,
         },
-  
-       
+        userId: {
+            type: dataTypes.INTEGER,
+            
+        },
+        precio:{
+            type: dataTypes.INTEGER,
+        }
     }
   
     const carrito = sequelize.define(alias, cols);

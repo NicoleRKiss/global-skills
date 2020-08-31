@@ -29,19 +29,22 @@
                 <!-- Aca van los items -->
                
 
-                <div class="card pl-5 col-12" id="card">
-                  
+                <!-- <div class="card pl-5 col-12" id="card"> -->
+                  <div class="pl-5 col-12" id="card">
                     <% item.forEach(element => { %>
                     <div class="card-body cardBody">
                         <img src="../images/dummyprod.jpg" alt="" style="height: 100px;">
                         
                          <p><%= element.nombre %> </p>
-                         <p>$<%= element.salePrice %> </p>
+                         <p>$<%= element.subTotal %> </p>
                         <!-- <h3 class="pl-2 pt-2">Curso de Community Manager - Programa Integral</h3> -->
-                        <i class="fa fa-trash pb-5" aria-hidden="true"></i>
+                    <form method="POST" action="/carrito/deleteFromCart" class="p-1">
+                        <input type="hidden" name="itemId" value="<%= element.id %>">
+                        <button type="submit" class="text-center p-3"> <i class="fa fa-trash pb-5" aria-hidden="true"></i></button>
+                    </form>
                     </div>
                     <% }) %>
-
+                   
 
                 </div>
                 <div class="mt-5 container col-12">
@@ -60,13 +63,16 @@
                 <div class="card col-10">
                     <div class="card-body">
                         <h1>Resumen</h1>
-                        <p>Total en carrito </p>
+                        <p>Total en carrito  </p>
 
                         <p>Cantidad de cursos</p>
 
                         <p>Total a pagar</p>
 
-                        <button class="comprar">Comprar ahora</button>
+                        <form method="POST" action="/carrito/createCart" class="p-1">
+                            <button class="comprar" type="submit">Comprar ahora</button>
+                        </form>
+                        
                         <a href="/carrito" id="seguir">Seguir comprando <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
