@@ -128,70 +128,63 @@
 
         </section>
         </div>
-        <h2 class="row2">CURSOS RELACIONADOS</h2>
-        <div class="container2">
+        
+              <!-- TEXTO LOS PRESENTANDO A LOS CURSOS POPULARES-->
+      <div class="tituloHome ">
+        <h2>LOS CURSOS MÁS POPULARES</h2>
+      </div>
 
-            <div class="row1">
+      <!-- linea-->
+      <div class="lineaIndex">
+        <h2>_________________________________________________________________________________________________________</h2>
+      </div>
 
-                <article class="col-md-3 ">
-                    <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
-                    <ul class="info">
-                        <li>Curso de Marketing Online</li>
-                        <li>Programa Integral</li>
-                        <li>Por Nombre Apellido</li>
-                    </ul>
 
-                    <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></p>
-                    <p><i class="fas fa-shopping-cart"></i>
-                        <button class="comprarAhora"><a href="/carrito/">Comprar Ahora</a></button>
+      <!-- LOS CURSOS MAS POPULARES-->
+      <div class="card  container-fluid" id="card">
+        <div class="row">
 
-                </article>
+          <div class="card" style="width: 18rem;">
+            <img src="../images/cursos/mrk1.png" alt="" class="prod">
+            <div class="card-body">
+              <h5 class="card-title">Curso de Marketing Online- Programa Integral</h5>
+              <p class="card-text">Por: Nombre Apellido<br>Ar$ XXXX<br><i class="far fa-star"></i></p>
+              <a href="#" class="btn btn-primary comprar"><i class="fas fa-plus"></i> Ver más</a>
+            </div>
+          </div>
 
-                <article class="col-md-3 ">
-                    <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
-                    <ul class="info">
-                        <li>Curso de Marketing Online</li>
-                        <li>Programa Integral</li>
-                        <li>Por Nombre Apellido</li>
-                    </ul>
+          <div class="card" style="width: 18rem;">
+            <img src="../images/cursos/cm2.png" alt="" class="prod">
+            <div class="card-body">
+              <h5 class="card-title">Curso de Community Manager - Introducción I</h5>
+              <p class="card-text">Por: Nombre Apellido<br>Ar$ XXXX<br><i class="far fa-star"></i></p>
+              <a href="#" class="btn btn-primary comprar"><i class="fas fa-plus"></i> Ver más</a>
+            </div>
+          </div>
 
-                    <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></p>
-                    <i class="fas fa-shopping-cart"></i><button class="comprarAhora"><a href="/carrito/">Comprar
-                            Ahora</a></button>
-
-                </article>
-
-                <article class="col-md-3 ">
-                    <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
-                    <ul>
-                        <li>Curso de Google Adwords y</li>
-                        <li>Posicionamiento en Google</li>
-                        <li>Por Nombre Apellido</li>
-                    </ul>
-                    <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></a></p>
-                    <p><i class="fas fa-shopping-cart"></i>
-                        <button class="comprarAhora"><a href="/carrito/">Comprar Ahora</a></button>
-                </article>
-
-                <article class="col-md-3">
-                    <img class="photo" src="../images/marketing-digital-home.png" alt="pdto 01">
-                    <ul class="info">
-                        <li>Curso de Marketing</li>
-                        <li>de Contenidos</li>
-                        <li>Por Nombre Apellido</li>
-                    </ul>
-                    <p class="star">AR$<%=Producto.precio%><i class="far fa-star"></i></p>
-                    <p><i class="fas fa-shopping-cart"></i>
-                        <button class="comprarAhora"><a href="/carrito/">Comprar Ahora</a></button>
-
-                </article>
-            
-
+          <div class="card" style="width: 18rem;">
+            <img src="../images/cursos/mrkContenidos.png" alt="" class="prod">
+            <div class="card-body">
+              <h5 class="card-title">Curso de Marketing de Contenidos</h5>
+              <p class="card-text">Por: Nombre Apellido<br>Ar$ XXXX<br><i class="far fa-star"></i></p>
+              <a href="#" class="btn btn-primary comprar"><i class="fas fa-plus"></i> Ver más</a>
+            </div>
+          </div>
+          
+          <div class="card " style="width: 18rem;">
+            <img src="../images/cursos/googleads.png" alt="" class="prod">
+            <div class="card-body">
+              <h5 class="card-title">Curso de Google Adwords y posicionamiento</h5>
+              <p class="card-text">Por: Nombre Apellido<br>Ar$ XXXX<br><i class="far fa-star"></i></p>
+              <a href="#" class="btn btn-primary comprar"><i class="fas fa-plus"></i> Ver más</a>
+            </div>
+          </div>  
         </div>
-        <%- include('partials/footer')  %>
+      </div>
 
-       
-    </div>
+
+    <%- include('partials/footer')  %>
+
 </body>
 
 </html>
