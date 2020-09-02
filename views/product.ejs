@@ -111,7 +111,7 @@
             <br>
             <br>
             <article>
-                <h2 class="descProduct">PREGUNTAS FRECUENTES</h2>
+                <!-- <h2 class="descProduct">PREGUNTAS FRECUENTES</h2>
 
                 <ul class="detProduct">
                     <li>¿Que es la modalidad digital?  <i class="fas fa-chevron-down"></i></li>
@@ -119,16 +119,69 @@
                     <li>¿Que incluyen los cursos de Global Skill?  <i class="fas fa-chevron-down"></i></li>
                     <li>¿Que cursos estan en Ingles?  <i class="fas fa-chevron-down"></i></li>
                     <li>Que otros idiomas tienen?  <i class="fas fa-chevron-down"></i></li>
-                </ul>
-                <form action="/product/delete/<%=Producto.id%>" method="POST">
-                    <button class="listHeader" type="submit">DELETE</button>
-                </form>
-                <button class="listHeader"><a href="/editarProductos/edit/<%=Producto.id%>">EDITAR</a></button>
+                </ul> -->
+                <div id="accordion">
+                    <div class="col">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">¿Qué es la modalidad digital?  <i class="fas fa-chevron-down"></i></li></button>
+                        </h5>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sequi, architecto excepturi ea id molestiae sed sint, dolore quo odio inventore sunt nihil non, vero ducimus alias culpa exercitationem modi.</div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">¿Cuáles cursos puedo hacer con modalidad digital?  <i class="fas fa-chevron-down"></i></button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sequi, architecto excepturi ea id molestiae sed sint, dolore quo odio inventore sunt nihil non, vero ducimus alias culpa exercitationem modi.</div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">¿Qué incluyen los cursos de Global Skill?  <i class="fas fa-chevron-down"></i></button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sequi, architecto excepturi ea id molestiae sed sint, dolore quo odio inventore sunt nihil non, vero ducimus alias culpa exercitationem modi.</div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card-header" id="headingFour">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">¿Qué cursos estan en Ingles?  <i class="fas fa-chevron-down"></i></button>
+                          </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                          <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sequi, architecto excepturi ea id molestiae sed sint, dolore quo odio inventore sunt nihil non, vero ducimus alias culpa exercitationem modi.</div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card-header" id="headingFive">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">¿Qué otros idiomas tienen?  <i class="fas fa-chevron-down"></i></button>
+                          </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                          <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sequi, architecto excepturi ea id molestiae sed sint, dolore quo odio inventore sunt nihil non, vero ducimus alias culpa exercitationem modi.</div>
+                        </div>
+                      </div>
+
+                  </div> 
+                  <%- include('partials/admin') %>
             </article>
 
         </section>
         </div>
-        
               <!-- TEXTO LOS PRESENTANDO A LOS CURSOS POPULARES-->
       <div class="tituloHome ">
         <h2>LOS CURSOS MÁS POPULARES</h2>
@@ -181,7 +234,6 @@
           </div>  
         </div>
       </div>
-
       <footer class="container-fluid menu position-sticky" >
         <ul class="col-2">
             <p>Nosotros</p>

@@ -479,11 +479,10 @@ H3{
     border-radius: 10px;
     border-bottom: 1px solid rgb(114, 113, 113);
 }
-
 .fixed {
     background-color:  rgb(198, 215, 221);
     font-family: Arial, Helvetica, sans-serif;
-    position: sticky; 
+    position: fixed; 
     /* era fixed */
     text-align:start;
     border-radius: 20px;
@@ -491,7 +490,7 @@ H3{
     top:30%;
     bottom: 30%;
     padding: 15px 230px 0px 30px;
-    width:30%;
+    width: 35%;
 }   
 .promoFixed{
     font-family: Arial, Helvetica, sans-serif;

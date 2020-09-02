@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>| Global Skills</title>
+    <title>Perfil de <%= locals.user.nombre  %> | Global Skills</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         
     <link rel="stylesheet" href="/css/estilos.css">
@@ -12,14 +12,50 @@
 </head>
 <body>
     <%- include('partials/header') %>
-    <div class="container">
-    <h1 class="text-center" style="text-transform: uppercase;">Hola <%= locals.user.nombre %> <%= locals.user.apellido %>!</h1>
+    <div class="container mb-5 pb-5">
+    <h1 class="text-center pt-5 mt-1 pb-2" style="text-transform: uppercase;">Hola <%= locals.user.nombre %> <%= locals.user.apellido %>!</h1>
     <h2>Tu email es: <%= locals.user.email %></h2>
     <div>
     <img src="../public/images/avatar/<%=locals.user.image%>" alt="" style="height: 200px;">
 </div>
-    
+    <button class="pb-2"><a href="/crudproductos">Crear producto</a></button>
+    <br>
+    <button><a href="/editarUsuarios/edit/<%= locals.user.id  %> ">Editar user</a></button>
+
     </div>
-    <%- include('partials/footer') %>
+
+    <footer class="container-fluid menu position-sticky" >
+        <ul class="col-2">
+            <p>Nosotros</p>
+            <li><a href="/index">Quienes Somos</a></li>
+            <li><a href="">Terminos y Condiciones</a></li>
+            <li><a href="">Política y Privacidad</a></li>
+    
+        </ul>
+    
+        <ul class="col-2">
+            <p>Info</p>
+            <li><a href="/categoria">Categorias</a></li>
+            <li><a href="">Profesores</a></li>
+            <li><a href="/listaProductos">Listado de Cursos</a></li>
+        </ul>
+    
+        <ul class="col-2">
+            <p>Medios</p>
+            <li><i class="fab fa-twitter"></i><a href="https://twitter.com/"> Twitter</a></li>
+            <li><i class="fab fa-facebook-f"></i><a href="https://facebook.com/"> Facebook</a></li>
+            <li><i class="fab fa-instagram"></i><a href="https://instagram.com/"> Instagram</a></li>
+            <li><i class="fab fa-linkedin-in"></i><a href="https://linkedin.com/"> LinkedIn</a></li>
+        </ul>
+    
+        <ul class="col-2">
+            <p>Contacto</p>
+            <li><a href="/index">Necesito Ayuda</a></li>
+            <li><a href="/login">Ingresa</a></li>
+            <li><a href="/register">Registrate</a></li>
+    
+        </ul>
+        <a href="index.html" class="logoF col-2"><img src="../images/LOGO.png" alt="logo" class="logo"></a>
+    </footer>
 </body>
 </html>
