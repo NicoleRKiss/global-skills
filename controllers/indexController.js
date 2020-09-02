@@ -9,10 +9,11 @@ const indexController = {
         db.Producto.findAll({
             include: [{ association: "categorias" }]
         })
+
             .then(function (productos) {
 
                 // let productos =resultados[0];
-                res.render("index", { productos: productos });
+                res.render("index", { productos: productos,});
             })
     },
     detail: function (req, res) {
